@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: a41d2d570a5c1fb44ac2cf80bd5991d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -862162537675471501
+    second: test_eye_skeleton_0
+  - first:
+      213: -6686908730854419849
+    second: test_eye_skeleton_1
+  - first:
+      213: 2047156984014413614
+    second: test_eye_skeleton_2
+  - first:
+      213: 672149708734686254
+    second: test_eye_skeleton_3
+  - first:
+      213: 6724023631423327996
+    second: test_eye_skeleton_4
+  - first:
+      213: -1659919000076669265
+    second: test_eye_skeleton_5
+  - first:
+      213: -8525703225099721658
+    second: test_eye_skeleton_6
+  - first:
+      213: 7426088349013766453
+    second: test_eye_skeleton_7
+  - first:
+      213: 3582365336455128615
+    second: test_eye_skeleton_8
+  - first:
+      213: -5624285341005835013
+    second: test_eye_skeleton_9
+  - first:
+      213: 160799396867965389
+    second: test_eye_skeleton_10
+  - first:
+      213: 94291216745331740
+    second: test_eye_skeleton_11
+  - first:
+      213: 903777585740771418
+    second: test_eye_skeleton_12
+  - first:
+      213: -1769247174938485383
+    second: test_eye_skeleton_13
+  - first:
+      213: -3433511264583720245
+    second: test_eye_skeleton_14
+  - first:
+      213: 8492174344500063394
+    second: test_eye_skeleton_15
+  - first:
+      213: 7248809350667300480
+    second: test_eye_skeleton_16
+  - first:
+      213: -6927041307958799719
+    second: test_eye_skeleton_17
+  - first:
+      213: -2870891566184736375
+    second: test_eye_skeleton_18
+  - first:
+      213: 7005605964299719323
+    second: test_eye_skeleton_19
+  - first:
+      213: -68040388311073526
+    second: test_eye_skeleton_20
+  - first:
+      213: -3675340454629367886
+    second: test_eye_skeleton_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: test_eye_skeleton_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 300
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375443b6dbbf804f0800000000000000
+      internalID: -862162537675471501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_1
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 166
+        width: 73
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772d6f320f35333a0800000000000000
+      internalID: -6686908730854419849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_2
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 156
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f93af3e66f86c10800000000000000
+      internalID: 2047156984014413614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_3
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 142
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2463015994f35900800000000000000
+      internalID: 672149708734686254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_4
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 148
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfec15c0ed7805d50800000000000000
+      internalID: 6724023631423327996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_5
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 139
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae228cc678c6f8e0800000000000000
+      internalID: -1659919000076669265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_6
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 109
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644678f761e9ea980800000000000000
+      internalID: -8525703225099721658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_7
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 52
+        width: 66
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531f1a12204ce0760800000000000000
+      internalID: 7426088349013766453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_8
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 127
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726a4171b4e17b130800000000000000
+      internalID: 3582365336455128615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_9
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 111
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf419e5f74682f1b0800000000000000
+      internalID: -5624285341005835013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_10
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 63
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1896213364b3200800000000000000
+      internalID: 160799396867965389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_11
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 75
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c7b8fac5dfe4100800000000000000
+      internalID: 94291216745331740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_12
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 46
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50f9020decda8c00800000000000000
+      internalID: 903777585740771418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_13
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 75
+        width: 8
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d9de9711f5277e0800000000000000
+      internalID: -1769247174938485383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_14
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 40
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc26f2642b7b950d0800000000000000
+      internalID: -3433511264583720245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_15
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 38
+        width: 39
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acac96a2934ad570800000000000000
+      internalID: 8492174344500063394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_16
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 40
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08eed07d2b1f89460800000000000000
+      internalID: 7248809350667300480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_17
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 38
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99298a6a1a43edf90800000000000000
+      internalID: -6927041307958799719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_18
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 8
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989d4e8c45b8828d0800000000000000
+      internalID: -2870891566184736375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_19
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 23
+        width: 39
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92517ad189e83160800000000000000
+      internalID: 7005605964299719323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_20
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 12
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0db65890a54e0ff0800000000000000
+      internalID: -68040388311073526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_eye_skeleton_21
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf913d44519efcc0800000000000000
+      internalID: -3675340454629367886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      test_eye_skeleton_0: -862162537675471501
+      test_eye_skeleton_1: -6686908730854419849
+      test_eye_skeleton_10: 160799396867965389
+      test_eye_skeleton_11: 94291216745331740
+      test_eye_skeleton_12: 903777585740771418
+      test_eye_skeleton_13: -1769247174938485383
+      test_eye_skeleton_14: -3433511264583720245
+      test_eye_skeleton_15: 8492174344500063394
+      test_eye_skeleton_16: 7248809350667300480
+      test_eye_skeleton_17: -6927041307958799719
+      test_eye_skeleton_18: -2870891566184736375
+      test_eye_skeleton_19: 7005605964299719323
+      test_eye_skeleton_2: 2047156984014413614
+      test_eye_skeleton_20: -68040388311073526
+      test_eye_skeleton_21: -3675340454629367886
+      test_eye_skeleton_3: 672149708734686254
+      test_eye_skeleton_4: 6724023631423327996
+      test_eye_skeleton_5: -1659919000076669265
+      test_eye_skeleton_6: -8525703225099721658
+      test_eye_skeleton_7: 7426088349013766453
+      test_eye_skeleton_8: 3582365336455128615
+      test_eye_skeleton_9: -5624285341005835013
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
