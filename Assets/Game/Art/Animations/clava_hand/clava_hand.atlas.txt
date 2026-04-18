@@ -1,0 +1,41 @@
+
+clava_hand.png
+size: 1738,302
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0
+  rotate: true
+  xy: 1578, 158
+  size: 142, 158
+  orig: 142, 158
+  offset: 0, 0
+  index: -1
+1
+  rotate: false
+  xy: 1578, 8
+  size: 146, 148
+  orig: 146, 149
+  offset: 0, 0
+  index: -1
+clava
+  rotate: false
+  xy: 1039, 39
+  size: 537, 261
+  orig: 537, 261
+  offset: 0, 0
+  index: -1
+left
+  rotate: false
+  xy: 521, 2
+  size: 516, 298
+  orig: 516, 298
+  offset: 0, 0
+  index: -1
+right
+  rotate: false
+  xy: 2, 2
+  size: 517, 298
+  orig: 517, 298
+  offset: 0, 0
+  index: -1
