@@ -1,6 +1,7 @@
+using Game.Scripts.PcManagers;
+using Game.Scripts.PcManagers.Player;
 using Game.Scripts.Player;
 using Game.Scripts.Tick;
-using UnityEngine;
 
 namespace Game.Scripts.Root
 {
@@ -10,7 +11,9 @@ namespace Game.Scripts.Root
         {
             G.Get<TickManager>().Initialize();
             G.Get<InputManager>().Initialize();
-            G.Get<HandsManager>().Initialize();
+            G.Get<BufferManager>().Initialize();
+            G.Get<HandsManager>().Initialize(); // инициализировать после включения пк
+            G.Get<PlayerManager>().Initialize();
         }
     }
 }

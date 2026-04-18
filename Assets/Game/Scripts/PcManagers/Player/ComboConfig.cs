@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Game.Scripts.PcManagers.Player
 {
-    [CreateAssetMenu(fileName = "comboConfig", menuName = "Game/Player/ComboConfig")]
+    [CreateAssetMenu(fileName = "comboConfig", menuName = "Game/ComboConfig")]
     public class ComboConfig : ScriptableObject
     {
         public string Uid;

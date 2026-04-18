@@ -6,44 +6,78 @@ namespace Game.Scripts.Player
 {
     public class InputManager : MonoBehaviour
     {
-        public event Action OnPerfect;
+        public event Action<KeyCode> OnPerfect;
         public event Action OnError;
-        public event Action<KeyCode> OnInput;
+        public event Action<KeyCode> OnInput; 
+
+        private int _pressCount;       
+        private float _firstError;    
+        private bool _wasClick;
+        
         
         [SerializeField] private TickManager _tickManager;
 
         public void Initialize()
         {
-            _tickManager.OnTick += CheckInput;
+            _tickManager.OnUpdate += CheckInput;
+            _tickManager.OnInputWindowClosed += OnInputWindowClosed;
+        }
+
+        private void ResetForNewTick()
+        {
+            _pressCount = 0;
+            _firstError = 0f;
+        }
+
+        private void Update()
+        {
+            _tickManager.RegisterInput();
         }
 
         private void CheckInput(float error)
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             {
-                OnInput?.Invoke(KeyCode.LeftArrow);
-                CheckTiming(error);
+                OnClick(error, KeyCode.LeftArrow);
+                OnInput?.Invoke(KeyCode.LeftArrow); 
+                _wasClick = true;
             }
             else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
-                OnInput?.Invoke(KeyCode.RightArrow);
-                CheckTiming(error);
+                OnClick(error, KeyCode.RightArrow);
+                OnInput?.Invoke(KeyCode.RightArrow); 
+                _wasClick = true;
             }
         }
 
-        private void CheckTiming(float error)
+        private void OnClick(float error, KeyCode key)
         {
-            if (error < 0.2f)
+            _pressCount++;
+            
+            if (_pressCount > 1)
             {
-                Debug.Log("Perfect");
-                OnPerfect?.Invoke();
-                
-            }
-            else
-            {
-                Debug.Log("Error");
                 OnError?.Invoke();
+                ResetForNewTick();
+                return;
             }
+            
+            if (error < 0.2f)
+                OnPerfect?.Invoke(key);
+            else
+                OnError?.Invoke();
+        }
+        
+        private void OnInputWindowClosed()
+        {
+            if (!_wasClick)
+            {
+                OnError?.Invoke();
+                ResetForNewTick();
+                return;
+            }
+            
+            _wasClick = false;
+            ResetForNewTick(); 
         }
     }
 }
