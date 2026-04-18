@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Test
 {
-    public class SpineTEst : MonoBehaviour, IInitializable
+    public class SpineTEst : MonoBehaviour
     {
         [SerializeField] private SkeletonAnimation _skeletonAnimation;
         [SpineBone] public string _boneName;
@@ -23,11 +23,6 @@ namespace Test
             
             _bone.X = worldMousePosition.x;
             _bone.Y = worldMousePosition.y;
-        }
-
-        public void Initialize()
-        {
-            
         }
     }
 }   
