@@ -7,19 +7,20 @@ namespace Game.Scripts.Tick
     {
         public event Action<float> OnTick;
         
-        [SerializeField] private AudioClip _tickSound;
-        [SerializeField] private AudioSource audioSource;
+        [SerializeField] private AudioClip[] _tickSound;
+        [SerializeField] private AudioSource _audioSource;
         private float _bpm = 124f;
     
         private float _nextTickTime;
         private float _tickInterval;
         private float _lastTickTime;
 
+        private int _currentTickSound;
         private bool _isInitialized;
         
         public void Initialize()
         {
-            audioSource = GetComponent<AudioSource>();
+            _audioSource = GetComponent<AudioSource>();
             _tickInterval = 60f / _bpm;
             _nextTickTime = Time.time;
             _isInitialized = true;
@@ -29,6 +30,7 @@ namespace Game.Scripts.Tick
         {
             if (!_isInitialized)
                 return;
+            
             while (Time.time >= _nextTickTime)
             {
                 PlayTick();
@@ -41,19 +43,23 @@ namespace Game.Scripts.Tick
             CheckInput();
         }
     
-        void PlayTick()
+        private void PlayTick()
         {
-            audioSource.PlayOneShot(_tickSound);
+            if (_currentTickSound >= _tickSound.Length)
+            {
+                _currentTickSound = 0;
+            }
+            
+            _audioSource.PlayOneShot(_tickSound[_currentTickSound]);
+            _currentTickSound++;
             _lastTickTime = Time.time;
         }
     
-    
         private void CheckInput()
         {
-                float error = Mathf.Abs(Time.time - _lastTickTime);
+            float error = Mathf.Abs(Time.time - _lastTickTime);
             
             OnTick?.Invoke(error);
-            
         }
     }
 }

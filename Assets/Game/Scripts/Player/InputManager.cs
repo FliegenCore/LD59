@@ -19,12 +19,12 @@ namespace Game.Scripts.Player
 
         private void CheckInput(float error)
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             {
                 OnInput?.Invoke(KeyCode.LeftArrow);
                 CheckTiming(error);
             }
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
                 OnInput?.Invoke(KeyCode.RightArrow);
                 CheckTiming(error);
