@@ -1,12 +1,13 @@
-using UnityEngine;
+using Game.Scripts.PcManagers.Player;
+using Game.Scripts.Root;
 
 namespace Game.Scripts.PcManagers
 {
-    public class PcInitializer : MonoBehaviour
+    public class PcInitializer
     {
         public void Initialize()
         {
-            
+            G.Get<PlayerManager>().Initialize();
         }
     }
 }
