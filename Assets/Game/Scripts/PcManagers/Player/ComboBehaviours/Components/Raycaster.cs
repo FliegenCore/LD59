@@ -9,7 +9,7 @@ namespace Game.Scripts.PcManagers.Player.Impl.Components
         public bool TryGetPatient(out APatientBehaviour patientBehaviour, Transform origin)
         {
             patientBehaviour = null;
-            var hit = Physics2D.Raycast(origin.position, Vector2.right, 2.1f);
+            var hit = Physics2D.Raycast(origin.position, Vector2.right, 1.5f);
 
             if (hit.collider == null)
             {

@@ -30,18 +30,29 @@ namespace Game.Scripts.PcManagers.Player
             _bufferManager.OnBufferFull += CheckCombo;
         }
 
+        public void Reset()
+        {
+            _playerView.transform.localPosition = new Vector2(0, -0.49f);
+        }
+
         private bool CheckCombo()
         {
             foreach (var combo in _combosBeh)
             {
                 if (_bufferManager.HasCombo(combo.ComboKeys))
                 {
-                    _currentCombo = combo;
-                    combo.Play();
-                    return true;
+                    if (combo.CanPlay())
+                    {
+                        _currentCombo = combo;
+                        combo.Play();
+                        return true;
+                    }
+
+                    _playerView.PlayAnimation("mistake", false);
+                    return false;
                 }
             }
-
+            _playerView.PlayAnimation("mistake", false);
             return false; 
         }
         

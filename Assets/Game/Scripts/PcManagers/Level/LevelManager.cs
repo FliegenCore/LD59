@@ -5,8 +5,11 @@ namespace Game.Scripts.PcManagers.Level
 {
     public class LevelManager : MonoBehaviour
     {
-        [SerializeField] private List<LevelConfig> _levelConfings;
-        private int _currentLevel;
+        [SerializeField] private Transform _levelParent;
+        [SerializeField] private List<Level> _levelPrefabs;
+
+        private Level _currentLevel;
+        private int _currentLevelIndex;
         
         public void Initialize()
         {
@@ -15,13 +18,19 @@ namespace Game.Scripts.PcManagers.Level
 
         public void NextLevel()
         {
-            _currentLevel++;
-            CreateLevel();
+            _currentLevelIndex++;
+            CreateLevel(_currentLevelIndex);
         }
         
-        public void CreateLevel()
+        public void CreateLevel(int index)
         {
+            if (_currentLevel != null)
+            {
+                Destroy(_currentLevel.gameObject);
+                _currentLevel = null;
+            }
             
+            Instantiate(_levelPrefabs[index], _levelParent);
         }
         
         public void RestartCurrentLevel()

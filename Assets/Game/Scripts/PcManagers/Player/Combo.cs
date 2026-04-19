@@ -32,5 +32,10 @@ namespace Game.Scripts.PcManagers.Player
             _comboBehaviour.Stop();
             _isPlay = false;
         }
+        
+        public bool CanPlay()
+        {
+            return _comboBehaviour.CanPlay();
+        }
     }
 }
