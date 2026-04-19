@@ -11,22 +11,21 @@ namespace Game.Scripts.PcManagers.Player
     {
         private float _moveDistance;
         
-        [SerializeField] private PlayerView _playerView;
         [SerializeField] private List<ComboConfig> _allCombos;
+        private PlayerView _playerView;
         private List<Combo> _combosBeh = new List<Combo>();
         private Combo _currentCombo;
 
         private BufferManager _bufferManager;
-
         
-        //ОТКЛЮЧАТЬ ДВИЖЕНИЕ ПРИ ИЗМЕНЕНИИ БУФЕРА
-        //ОТКЛЮЧАТЬ ДВИЖЕНИЕ ПРИ ИЗМЕНЕНИИ БУФЕРА
-        //ОТКЛЮЧАТЬ ДВИЖЕНИЕ ПРИ ИЗМЕНЕНИИ БУФЕРА
+        
         public void Initialize()
         {
             _bufferManager = G.Get<BufferManager>();
-            _playerView.transform.localPosition = new Vector2(-2.85f, 0.41f);
+            _playerView = G.Get<PlayerView>();
+            _playerView.transform.localPosition = new Vector2(0, -0.49f);
             _combosBeh.Add(new Combo(GetComboConfigByUid("MoveCombo"), new MoveCombo(_playerView)));
+            _combosBeh.Add(new Combo(GetComboConfigByUid("PillCombo"), new PillCombo(_playerView)));
 
             _bufferManager.OnBufferFull += CheckCombo;
         }

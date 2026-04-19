@@ -29,20 +29,19 @@ namespace Game.Scripts.PcManagers
             
             track.Complete += _ =>
             {
-                EmptyAll();
                 _animationState.SetAnimation(0, "body/idle", false);
+                EmptyAll();
             };
         }
 
         public void ClearGoodAnimation()
         {
-            
             var track = _animationState.SetAnimation(0, "body/done", false);
 
             track.Complete += _ =>
             {
-                EmptyAll();
                 _animationState.SetAnimation(0, "body/idle", false);
+                EmptyAll();
             };
         }
 

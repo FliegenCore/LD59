@@ -12,7 +12,7 @@ namespace Game.Scripts.Root
             G.Get<TickManager>().Initialize();
             G.Get<InputManager>().Initialize();
             G.Get<BufferManager>().Initialize();
-            G.Get<HandsManager>().Initialize(); // инициализировать после включения пк
+            G.Get<HandsManager>().Initialize(); 
             G.Get<PlayerManager>().Initialize();
         }
     }

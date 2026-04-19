@@ -1,5 +1,6 @@
 using Game.Scripts.PcManagers;
 using Game.Scripts.PcManagers.Player;
+using Game.Scripts.PcManagers.Player.Impl.Components;
 using Game.Scripts.PcManagers.Player.View;
 using Game.Scripts.Player;
 using Game.Scripts.Tick;
@@ -23,6 +24,7 @@ namespace Game.Scripts.Root
 
         private void RegisterAll()
         {
+            G.Register(new Raycaster());
             G.Register(_bufferView);
             G.Register(new BufferManager());
             G.Register(_inputManager);

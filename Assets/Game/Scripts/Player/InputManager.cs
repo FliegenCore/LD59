@@ -38,15 +38,15 @@ namespace Game.Scripts.Player
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             {
-                OnClick(error, KeyCode.LeftArrow);
-                OnInput?.Invoke(KeyCode.LeftArrow); 
                 _wasClick = true;
+                OnInput?.Invoke(KeyCode.LeftArrow); 
+                OnClick(error, KeyCode.LeftArrow);
             }
             else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
-                OnClick(error, KeyCode.RightArrow);
-                OnInput?.Invoke(KeyCode.RightArrow); 
                 _wasClick = true;
+                OnInput?.Invoke(KeyCode.RightArrow); 
+                OnClick(error, KeyCode.RightArrow);
             }
         }
 
@@ -64,7 +64,10 @@ namespace Game.Scripts.Player
             if (error < 0.2f)
                 OnPerfect?.Invoke(key);
             else
+            {
                 OnError?.Invoke();
+                ResetForNewTick();
+            }
         }
         
         private void OnInputWindowClosed()

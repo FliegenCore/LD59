@@ -60,8 +60,8 @@ namespace Game.Scripts.PcManagers
                 return;
             
             _bufferKeys.Clear();
-            OnBufferChanged?.Invoke(_bufferKeys);
             _bufferView.ClearGoodAnimation();
+            OnBufferChanged?.Invoke(_bufferKeys);
         }
         
         private void Clear()
