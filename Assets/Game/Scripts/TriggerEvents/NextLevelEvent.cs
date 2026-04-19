@@ -13,7 +13,6 @@ namespace Game.Scripts.TriggerEvents
             {
                 gameObject.SetActive(false);
                 
-                //first show loading on screen
                 G.Get<LevelManager>().NextLevel();
             }
         }

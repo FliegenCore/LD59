@@ -52,6 +52,11 @@ namespace Game.Scripts.PcManagers.Player.Impl
             return false;
         }
 
+        public override void Reset()
+        {
+            _nextMoveX = 0;
+        }
+
         private void Move()
         {
             if (!_isPlay) return;

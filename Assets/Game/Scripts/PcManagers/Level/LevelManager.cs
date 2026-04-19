@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Game.Scripts.PcManagers.Player;
 using Game.Scripts.Root;
 using Game.Scripts.Tick;
 using UnityEngine;
@@ -31,6 +32,9 @@ namespace Game.Scripts.PcManagers.Level
             {
                 G.Get<TickManager>().Unpause();
             });
+            
+            G.Get<PlayerManager>().Reset();
+            
             if (_currentLevel != null)
             {
                 Destroy(_currentLevel.gameObject);
@@ -42,7 +46,7 @@ namespace Game.Scripts.PcManagers.Level
         
         public void RestartCurrentLevel()
         {
-            //initialize all characters
+            _currentLevel.RestartLevel();
         }
     }
 }

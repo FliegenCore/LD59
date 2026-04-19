@@ -14,12 +14,11 @@ namespace Game.Scripts.PcManagers.Level
         public void RestartLevel()
         {
             G.Get<PlayerManager>().Reset();
+            G.Get<PlayerManager>().Reset();
             foreach (var patient in _patients)
             {
                 patient.Reset();
             }
         }
-        
-        
     }
 }
