@@ -3,11 +3,14 @@ using Game.Scripts.Root;
 using Spine;
 using Spine.Unity;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Game.Scripts
 {
     public class HandsManager : MonoBehaviour
     {
+        [SerializeField] private AudioSource _leftClickSource;
+        [SerializeField] private AudioSource _rightClickSource;
         [SerializeField] private SkeletonAnimation _skeletonAnimation;
         
         private Spine.AnimationState _animationState;
@@ -17,9 +20,9 @@ namespace Game.Scripts
         {
             _inputManager = G.Get<InputManager>();
             _animationState = _skeletonAnimation.AnimationState;
-
             _animationState.SetAnimation(0, "right_idle", true);
             _animationState.SetAnimation(1, "left_idle", true);
+            _animationState.Event += EventListen;
             _inputManager.OnInput += OnInput;
         }
 
@@ -45,9 +48,16 @@ namespace Game.Scripts
             }
         }
 
-        private void EventListen(TrackEntry trackEntry, Spine.Event e)
+        private void EventListen(TrackEntry trackEntry, Event e)
         {
-            
+            if (e.Data.Name == "left_click")
+            {
+                _leftClickSource.Play();
+            }
+            else if (e.Data.Name == "right_click")
+            {
+                _rightClickSource.Play();
+            }
         }
         
         private void PlayAnimation()

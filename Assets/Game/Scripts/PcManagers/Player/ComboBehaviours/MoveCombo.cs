@@ -25,6 +25,7 @@ namespace Game.Scripts.PcManagers.Player.Impl
                 return;
                     
             _nextMoveX += 2f;
+            _playerView.PlayAnimation("walk", true);
             _isPlay = true;
             
             Observable.EveryUpdate()
@@ -34,13 +35,14 @@ namespace Game.Scripts.PcManagers.Player.Impl
 
         public override void Stop()
         {
+            _playerView.PlayAnimation("idle", true);
             _disposables?.Clear();
             _isPlay = false;
         }
 
         public override bool CanPlay()
         {
-            return G.Get<Raycaster>().TryGetPatient(out _, _playerView.transform);
+            return !G.Get<Raycaster>().TryGetPatient(out _, _playerView.transform);
         }
 
         private void Move()

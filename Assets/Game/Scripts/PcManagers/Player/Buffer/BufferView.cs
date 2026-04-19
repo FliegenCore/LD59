@@ -19,8 +19,7 @@ namespace Game.Scripts.PcManagers
             string code = keyCode == KeyCode.LeftArrow ? "0": "1";
 
             string animationName = $"slot{index}/{code}";
-            _animationState.SetAnimation(index + 1, animationName, false);
-            Debug.Log("Show value"  + animationName);
+            _animationState.SetAnimation(index, animationName, false);
         }
         
         public void Clear()
@@ -47,10 +46,10 @@ namespace Game.Scripts.PcManagers
 
         private void EmptyAll()
         {
-            _animationState.SetAnimation(1, "slot1/empty", false);
-            _animationState.SetAnimation(2, "slot2/empty", false);
-            _animationState.SetAnimation(3, "slot3/empty", false);
-            _animationState.SetAnimation(4, "slot4/empty", false);
+            _animationState.SetAnimation(1, "slot1/empty", true);
+            _animationState.SetAnimation(2, "slot2/empty", true);
+            _animationState.SetAnimation(3, "slot3/empty", true);
+            _animationState.SetAnimation(4, "slot4/empty", true);
             
             _animationState.SetEmptyAnimation(1,0);
             _animationState.SetEmptyAnimation(2,0);
