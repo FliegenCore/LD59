@@ -19,10 +19,14 @@ namespace Game.Scripts.PcManagers.Player.Impl
         
         public override void Play()
         {
-            if (_raycaster.TryGetPatient(out var patient, _playerView.transform))
+            if (_raycaster.TryGetPatient(out var patient, _playerView.Origin))
             {
                 //play animation
-                patient.UseItem(new UseItem{Uid = "Pill"});   
+                _playerView.PlayAnimation("attack1", false);
+                patient.UseItem(new UseItem{Uid = "Pill"}, () =>
+                {
+                    
+                });   
             }
             else
             {
@@ -39,7 +43,7 @@ namespace Game.Scripts.PcManagers.Player.Impl
 
         public override bool CanPlay()
         {
-            return true;
+            return _raycaster.TryGetPatient(out var patient, _playerView.transform);
         }
     }
 }

@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using Game.Scripts.Root;
+using Game.Scripts.Tick;
 using UnityEngine;
 
 namespace Game.Scripts.PcManagers.Level
@@ -7,13 +9,13 @@ namespace Game.Scripts.PcManagers.Level
     {
         [SerializeField] private Transform _levelParent;
         [SerializeField] private List<Level> _levelPrefabs;
-
+        [SerializeField] private LoadingWindow _loadingWindow;
+        
         private Level _currentLevel;
         private int _currentLevelIndex;
         
         public void Initialize()
         {
-            
         }
 
         public void NextLevel()
@@ -24,6 +26,11 @@ namespace Game.Scripts.PcManagers.Level
         
         public void CreateLevel(int index)
         {
+            G.Get<TickManager>().Pause();
+            _loadingWindow.Show(() =>
+            {
+                G.Get<TickManager>().Unpause();
+            });
             if (_currentLevel != null)
             {
                 Destroy(_currentLevel.gameObject);

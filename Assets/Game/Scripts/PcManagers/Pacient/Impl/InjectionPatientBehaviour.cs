@@ -1,16 +1,17 @@
+using System;
 using Game.Scripts.PcManagers.Player.Item;
 
 namespace Game.Scripts.PcManagers.Pacient
 {
     public class InjectionPatientBehaviour : APatientBehaviour
     {
-        public override void UseItem(UseItem useItem)
+        public override void UseItem(UseItem useItem, Action callback)
         {
             string uid = useItem.Uid;
 
             if (uid == "Injection")
             {
-                _view.BoxCollider2D.enabled = false;
+                GoodResult();
             }
             else
             {

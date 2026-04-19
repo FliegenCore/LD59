@@ -13,7 +13,6 @@ namespace Game.Scripts.Root
             G.Get<InputManager>().Initialize();
             G.Get<BufferManager>().Initialize();
             G.Get<HandsManager>().Initialize(); 
-            G.Get<PlayerManager>().Initialize();
         }
     }
 }

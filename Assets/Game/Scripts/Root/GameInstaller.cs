@@ -1,4 +1,5 @@
 using Game.Scripts.PcManagers;
+using Game.Scripts.PcManagers.Level;
 using Game.Scripts.PcManagers.Player;
 using Game.Scripts.PcManagers.Player.Impl.Components;
 using Game.Scripts.PcManagers.Player.View;
@@ -16,6 +17,7 @@ namespace Game.Scripts.Root
         [SerializeField] private BufferView _bufferView;
         [SerializeField] private PlayerManager _playerManager;
         [SerializeField] private PlayerView _playerView;
+        [SerializeField] private LevelManager _levelManager;
         
         private void Start()
         {
@@ -32,6 +34,7 @@ namespace Game.Scripts.Root
             G.Register(_handsManager);
             G.Register(_playerView);
             G.Register(_playerManager);
+            G.Register(_levelManager);
             G.Register(new PcInitializer());
             G.Register(new GameBootstrap());
             

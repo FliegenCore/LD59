@@ -42,7 +42,14 @@ namespace Game.Scripts.PcManagers.Player.Impl
 
         public override bool CanPlay()
         {
-            return !G.Get<Raycaster>().TryGetPatient(out _, _playerView.transform);
+            if (!G.Get<Raycaster>().TryGetPatient(out var f, _playerView.transform))
+            {
+                
+                return true;
+            }
+            Debug.Log(f.name);
+
+            return false;
         }
 
         private void Move()

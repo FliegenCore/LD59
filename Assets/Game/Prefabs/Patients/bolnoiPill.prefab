@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7658549045587884118}
   - component: {fileID: 6687134589555816850}
   - component: {fileID: 25459444547065327}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bolnoiPill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
