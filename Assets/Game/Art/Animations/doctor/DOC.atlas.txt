@@ -1,0 +1,90 @@
+
+DOC.png
+size: 400,547
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Legs2
+  rotate: false
+  xy: 111, 5
+  size: 198, 128
+  orig: 202, 132
+  offset: 2, 2
+  index: -1
+PILS
+  rotate: false
+  xy: 109, 338
+  size: 109, 48
+  orig: 113, 52
+  offset: 2, 2
+  index: -1
+arm1
+  rotate: false
+  xy: 2, 2
+  size: 107, 131
+  orig: 111, 135
+  offset: 2, 2
+  index: -1
+arm2
+  rotate: true
+  xy: 311, 21
+  size: 112, 87
+  orig: 116, 91
+  offset: 2, 2
+  index: -1
+armRADIO
+  rotate: false
+  xy: 2, 336
+  size: 105, 209
+  orig: 109, 213
+  offset: 2, 2
+  index: -1
+body
+  rotate: true
+  xy: 268, 246
+  size: 142, 123
+  orig: 146, 127
+  offset: 2, 2
+  index: -1
+dust1
+  rotate: true
+  xy: 180, 179
+  size: 157, 86
+  orig: 161, 90
+  offset: 2, 2
+  index: -1
+head
+  rotate: false
+  xy: 109, 388
+  size: 141, 157
+  orig: 145, 161
+  offset: 2, 2
+  index: -1
+legs1
+  rotate: true
+  xy: 252, 390
+  size: 155, 136
+  orig: 159, 140
+  offset: 2, 2
+  index: -1
+lyamka
+  rotate: true
+  xy: 180, 137
+  size: 40, 111
+  orig: 44, 115
+  offset: 2, 2
+  index: -1
+pack
+  rotate: false
+  xy: 2, 135
+  size: 176, 199
+  orig: 180, 203
+  offset: 2, 2
+  index: -1
+what
+  rotate: true
+  xy: 293, 135
+  size: 109, 94
+  orig: 109, 94
+  offset: 0, 0
+  index: -1

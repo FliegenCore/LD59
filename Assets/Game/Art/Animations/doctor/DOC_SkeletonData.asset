@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
-  m_Name: skeleton_SkeletonData
+  m_Name: DOC_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: b16b05f12bdff86469f078c49456b34c, type: 2}
-  scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 3c265c3712261a142b5d6220e99dc997, type: 3}
+  - {fileID: 11400000, guid: 627658ff280ac6943bbe243c33b7ef49, type: 2}
+  scale: 0.0066
+  skeletonJSON: {fileID: 4900000, guid: de85a9499fb0a7d45ab1ff618a3904a9, type: 3}
   skeletonDataModifiers: []
   fromAnimation: []
   toAnimation: []
   duration: []
-  defaultMix: 0
+  defaultMix: 0.2
   controller: {fileID: 0}
