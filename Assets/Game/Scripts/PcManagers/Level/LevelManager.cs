@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Game.Scripts.PcManagers.Player;
 using Game.Scripts.Root;
 using Game.Scripts.Tick;
+using TMPro;
 using UnityEngine;
 
 namespace Game.Scripts.PcManagers.Level
@@ -11,6 +12,7 @@ namespace Game.Scripts.PcManagers.Level
         [SerializeField] private Transform _levelParent;
         [SerializeField] private List<Level> _levelPrefabs;
         [SerializeField] private LoadingWindow _loadingWindow;
+        [SerializeField] private TMP_Text _currentLevelText;
         
         private Level _currentLevel;
         private int _currentLevelIndex;
@@ -27,6 +29,7 @@ namespace Game.Scripts.PcManagers.Level
         
         public void CreateLevel(int index)
         {
+            _currentLevelText.text = $"{index + 1}/{_levelPrefabs.Count}";
             G.Get<TickManager>().Pause();
             _loadingWindow.Show(() =>
             {
