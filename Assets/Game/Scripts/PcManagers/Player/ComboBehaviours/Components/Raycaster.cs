@@ -1,5 +1,4 @@
 using Game.Scripts.PcManagers.Pacient;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Game.Scripts.PcManagers.Player.Impl.Components
@@ -9,7 +8,7 @@ namespace Game.Scripts.PcManagers.Player.Impl.Components
         public bool TryGetPatient(out APatientBehaviour patientBehaviour, Transform origin)
         {
             patientBehaviour = null;
-            var hit = Physics2D.Raycast(origin.position, Vector2.right, 1.5f);
+            var hit = Physics2D.Raycast(origin.position, Vector2.right, 2.1f, LayerMask.GetMask("Patient"));
 
             if (hit.collider == null)
             {

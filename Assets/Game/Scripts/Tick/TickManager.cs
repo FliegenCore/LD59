@@ -22,6 +22,8 @@ namespace Game.Scripts.Tick
         private int _currentTickSound;
         private bool _isInitialized;
 
+        private bool _isPaused;
+
         public void Initialize()
         {
             _audioSource = GetComponent<AudioSource>();
@@ -33,7 +35,7 @@ namespace Game.Scripts.Tick
 
         private void Update()
         {
-            if (!_isInitialized) return;
+            if (!_isInitialized || _isPaused) return;
 
             while (Time.time >= _nextTickTime)
             {
@@ -56,6 +58,16 @@ namespace Game.Scripts.Tick
             }
         }
 
+        public void Pause()
+        {
+            _isPaused = true;
+        }
+
+        public void Unpause()
+        {
+            _isPaused = false;
+        }
+
         private void PlayTick()
         {
             if (_currentTickSound >= _tickSound.Length)
@@ -71,7 +83,7 @@ namespace Game.Scripts.Tick
 
         public void RegisterInput()
         {
-            if (!_isInitialized) return;
+            if (!_isInitialized || _isPaused) return;
             float error = Mathf.Abs(Time.time - _lastTickTime);
             OnUpdate?.Invoke(error);
         }
