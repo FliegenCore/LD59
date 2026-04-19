@@ -32,6 +32,12 @@ TextureImporter:
   - first:
       213: 7532198570197003758
     second: combo_box_9
+  - first:
+      213: 4176232081231412339
+    second: combo_box_10
+  - first:
+      213: 2167094823011484193
+    second: combo_box_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -123,45 +129,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -170,9 +137,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1
-        width: 496
-        height: 103
+        y: 85
+        width: 400
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +158,10 @@ TextureImporter:
       name: combo_box_1
       rect:
         serializedVersion: 2
-        x: 497
-        y: 77
-        width: 27
-        height: 29
+        x: 216
+        y: 46
+        width: 39
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +180,10 @@ TextureImporter:
       name: combo_box_2
       rect:
         serializedVersion: 2
-        x: 563
-        y: 74
-        width: 34
-        height: 33
+        x: 1
+        y: 43
+        width: 46
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,10 +202,10 @@ TextureImporter:
       name: combo_box_3
       rect:
         serializedVersion: 2
-        x: 631
-        y: 75
-        width: 36
-        height: 37
+        x: 73
+        y: 41
+        width: 41
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +224,10 @@ TextureImporter:
       name: combo_box_4
       rect:
         serializedVersion: 2
-        x: 700
-        y: 75
-        width: 36
-        height: 36
+        x: 143
+        y: 44
+        width: 41
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,10 +246,10 @@ TextureImporter:
       name: combo_box_5
       rect:
         serializedVersion: 2
-        x: 736
-        y: 74
-        width: 42
-        height: 27
+        x: 1
+        y: 1
+        width: 22
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,10 +268,10 @@ TextureImporter:
       name: combo_box_6
       rect:
         serializedVersion: 2
-        x: 497
+        x: 23
         y: 1
-        width: 135
-        height: 73
+        width: 43
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +290,10 @@ TextureImporter:
       name: combo_box_7
       rect:
         serializedVersion: 2
-        x: 631
-        y: 6
-        width: 77
-        height: 68
+        x: 66
+        y: 1
+        width: 39
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,10 +312,10 @@ TextureImporter:
       name: combo_box_8
       rect:
         serializedVersion: 2
-        x: 702
-        y: 3
-        width: 66
-        height: 71
+        x: 105
+        y: 5
+        width: 38
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,10 +334,10 @@ TextureImporter:
       name: combo_box_9
       rect:
         serializedVersion: 2
-        x: 768
+        x: 175
         y: 1
-        width: 25
-        height: 35
+        width: 40
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,6 +348,50 @@ TextureImporter:
       bones: []
       spriteID: eed2c4a31beb78860800000000000000
       internalID: 7532198570197003758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo_box_10
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 3
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c736583f4f4f930800000000000000
+      internalID: 4176232081231412339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo_box_11
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 4
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12200308241131e10800000000000000
+      internalID: 2167094823011484193
       vertices: []
       indices: 
       edges: []
@@ -401,6 +412,8 @@ TextureImporter:
     nameFileIdTable:
       combo_box_0: 7986448965127096175
       combo_box_1: -4077636238547683910
+      combo_box_10: 4176232081231412339
+      combo_box_11: 2167094823011484193
       combo_box_2: 5251676713987879062
       combo_box_3: 930437791482964180
       combo_box_4: 8866223875378871827

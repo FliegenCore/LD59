@@ -1,41 +1,48 @@
 
 combo_box.png
-size: 794,113
+size: 402,242
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 0
   rotate: true
-  xy: 737, 13
-  size: 25, 40
-  orig: 25, 40
+  xy: 24, 214
+  size: 26, 41
+  orig: 26, 41
   offset: 0, 0
   index: -1
 1
-  rotate: false
-  xy: 769, 78
-  size: 23, 33
-  orig: 23, 33
+  rotate: true
+  xy: 67, 206
+  size: 34, 37
+  orig: 34, 37
   offset: 0, 0
   index: -1
 body
   rotate: false
-  xy: 2, 10
-  size: 494, 101
-  orig: 494, 101
-  offset: 0, 0
+  xy: 2, 2
+  size: 398, 154
+  orig: 405, 164
+  offset: 5, 0
   index: -1
 done
   rotate: false
-  xy: 498, 2
-  size: 237, 36
-  orig: 237, 36
+  xy: 106, 202
+  size: 247, 38
+  orig: 247, 38
   offset: 0, 0
   index: -1
 error
   rotate: false
-  xy: 498, 40
-  size: 269, 71
-  orig: 289, 107
-  offset: 16, 20
+  xy: 2, 158
+  size: 252, 42
+  orig: 252, 42
+  offset: 0, 0
+  index: -1
+point
+  rotate: false
+  xy: 2, 221
+  size: 20, 19
+  orig: 21, 20
+  offset: 0, 1
   index: -1
