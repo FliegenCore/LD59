@@ -22,7 +22,7 @@ namespace Game.Scripts.PcManagers.Player.Impl
             if (_raycaster.TryGetPatient(out var patient, _playerView.Origin))
             {
                 //play animation
-                _playerView.PlayAnimation("attack1", false);
+                _playerView.PlayAnimation("pills", false);
                 patient.UseItem(new UseItem{Uid = "Pill"}, () =>
                 {
                     
