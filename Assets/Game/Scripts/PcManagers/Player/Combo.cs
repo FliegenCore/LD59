@@ -37,5 +37,10 @@ namespace Game.Scripts.PcManagers.Player
         {
             return _comboBehaviour.CanPlay();
         }
+
+        public void Reset()
+        {
+            _comboBehaviour.Reset();
+        }
     }
 }

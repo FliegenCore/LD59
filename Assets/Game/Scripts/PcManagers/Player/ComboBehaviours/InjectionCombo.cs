@@ -27,5 +27,10 @@ namespace Game.Scripts.PcManagers.Player.Impl
         {
             return G.Get<Raycaster>().TryGetPatient(out var patient, _playerView.transform);
         }
+
+        public override void Reset()
+        {
+            
+        }
     }
 }

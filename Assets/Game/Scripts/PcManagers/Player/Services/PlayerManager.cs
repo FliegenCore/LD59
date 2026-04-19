@@ -43,6 +43,11 @@ namespace Game.Scripts.PcManagers.Player
         {
             _playerView.transform.localPosition = new Vector2(0, -0.49f);
             _playerView.PlayAnimation("idle", true);
+
+            foreach (var combo in _combosBeh)
+            {
+                combo.Reset();
+            }
         }
 
         private bool CheckCombo()
