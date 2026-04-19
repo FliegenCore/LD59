@@ -8,5 +8,6 @@ namespace Game.Scripts.PcManagers.Player
         
         public abstract void Play();
         public abstract void Stop();
+        public abstract bool CanPlay();
     }
 }
