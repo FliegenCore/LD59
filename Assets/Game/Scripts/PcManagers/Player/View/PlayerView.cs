@@ -18,14 +18,20 @@ namespace Game.Scripts.PcManagers.Player.View
             _animationState = _skeletonAnimation.AnimationState;
         }
         
-        public void PlayAnimation(string animationName, bool isLoop)
+        public void PlayAnimation(string animationName, bool isLoop, Action callback = null)
         {
             var track = _animationState.SetAnimation(0, animationName, isLoop);
 
+            
+            
             if (!isLoop)
             {
                 track.Complete += _ =>
                 {
+                    if (callback != null)
+                    {
+                        callback?.Invoke();
+                    }
                     ExitOnIdleAnimation();
                 };
             }

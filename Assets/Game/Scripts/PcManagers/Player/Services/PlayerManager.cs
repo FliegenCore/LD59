@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Game.Scripts.PcManagers.Level;
 using Game.Scripts.PcManagers.Player.Impl;
 using Game.Scripts.PcManagers.Player.View;
 using Game.Scripts.Root;
@@ -11,6 +12,8 @@ namespace Game.Scripts.PcManagers.Player
 {
     public class PlayerManager : MonoBehaviour
     {
+        private event Action _onCompleteCurrentAction;
+        
         private float _moveDistance;
 
         public event Action<string> OnComboAdd;
@@ -24,7 +27,6 @@ namespace Game.Scripts.PcManagers.Player
 
         private BufferManager _bufferManager;
         
-        
         public void Initialize()
         {
             _bufferManager = G.Get<BufferManager>();
@@ -33,6 +35,7 @@ namespace Game.Scripts.PcManagers.Player
             _combosBeh.Add(new Combo(GetComboConfigByUid("MoveCombo"), new MoveCombo(_playerView)));
             _combosBeh.Add(new Combo(GetComboConfigByUid("PillCombo"), new PillCombo(_playerView)));
             _combosBeh.Add(new Combo(GetComboConfigByUid("InjectionCombo"), new InjectionCombo(_playerView)));
+            _combosBeh.Add(new Combo(GetComboConfigByUid("PistolCombo"), new PistolCombo(_playerView)));
 
             foreach (var start in _startOpenedCombos)
             {
@@ -67,6 +70,11 @@ namespace Game.Scripts.PcManagers.Player
                     if (combo.CanPlay())
                     {
                         _currentCombo = combo;
+
+                        if (_currentCombo != null)
+                            _currentCombo.ComboBehaviour.OnComplete -= InvokeOnCompleteCurrentAction;
+                        
+                        _currentCombo.ComboBehaviour.OnComplete += InvokeOnCompleteCurrentAction;
                         combo.Play();
                         return true;
                     }
@@ -77,6 +85,21 @@ namespace Game.Scripts.PcManagers.Player
             }
             _playerView.PlayAnimation("mistake", false);
             return false; 
+        }
+
+        public void SubscribeOnCompleteCurrentAction(Action action)
+        {
+            _onCompleteCurrentAction += action;
+        }
+
+        public void UnsubscribeOnCompleteCurrentAction(Action action)
+        {
+            _onCompleteCurrentAction -= action;
+        }
+
+        private void InvokeOnCompleteCurrentAction()
+        {
+            _onCompleteCurrentAction?.Invoke();
         }
 
         public void AddCombo(ComboConfig combo)
@@ -97,6 +120,11 @@ namespace Game.Scripts.PcManagers.Player
             }
 
             return null;
+        }
+
+        public void PlayerDie()
+        {
+            _playerView.PlayAnimation("die", false, G.Get<LevelManager>().RestartCurrentLevel);
         }
     }
 }

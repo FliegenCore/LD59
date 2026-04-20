@@ -10,6 +10,7 @@ namespace Game.Scripts.PcManagers.Pacient
         
         [SerializeField] private SkeletonAnimation _skeletonAnimation;
         private Spine.AnimationState _animationState;
+        public Transform Origin;
 
         private void Awake()
         {

@@ -49,7 +49,7 @@ namespace Game.Scripts.PcManagers.Level
             }
             
             _currentLevel = Instantiate(_levelPrefabs[index], _levelParent);
-            
+            _currentLevel.Initialize();
             foreach (var newCombo in _currentLevel.NewCombos)
             {
                 G.Get<PlayerManager>().AddCombo(newCombo);

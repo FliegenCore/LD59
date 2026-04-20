@@ -1,6 +1,7 @@
 using Game.Scripts.PcManagers.Player.Impl.Components;
 using Game.Scripts.PcManagers.Player.View;
 using Game.Scripts.Root;
+using Game.Scripts.Tick;
 using UniRx;
 using UnityEngine;
 
@@ -23,7 +24,7 @@ namespace Game.Scripts.PcManagers.Player.Impl
         {
             if (_isPlay)
                 return;
-                    
+            
             _nextMoveX += 2f;
             _playerView.PlayAnimation("walk", true);
             _isPlay = true;
@@ -44,10 +45,8 @@ namespace Game.Scripts.PcManagers.Player.Impl
         {
             if (!G.Get<Raycaster>().TryGetPatient(out var f, _playerView.transform))
             {
-                
                 return true;
             }
-            Debug.Log(f.name);
 
             return false;
         }

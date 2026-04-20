@@ -5,7 +5,7 @@ namespace Game.Scripts.PcManagers.Player
 {
     public class Combo
     {
-        private readonly AComboBehaviour _comboBehaviour;
+        public readonly AComboBehaviour ComboBehaviour;
         private bool _isPlay;
         private List<KeyCode> comboKeys = new();
         public string Uid;
@@ -16,31 +16,31 @@ namespace Game.Scripts.PcManagers.Player
         {
             comboKeys = config.ComboKeys;
             Uid = config.Uid;
-            _comboBehaviour = comboBehaviour;
+            ComboBehaviour = comboBehaviour;
 
-            _comboBehaviour.OnComplete += Stop;
+            ComboBehaviour.OnComplete += Stop;
         }
         
         public void Play()
         {
-            _comboBehaviour.Play();
+            ComboBehaviour.Play();
             _isPlay = true;
         }
 
         public void Stop()
         {
-            _comboBehaviour.Stop();
+            ComboBehaviour.Stop();
             _isPlay = false;
         }
         
         public bool CanPlay()
         {
-            return _comboBehaviour.CanPlay();
+            return ComboBehaviour.CanPlay();
         }
 
         public void Reset()
         {
-            _comboBehaviour.Reset();
+            ComboBehaviour.Reset();
         }
     }
 }

@@ -11,6 +11,15 @@ namespace Game.Scripts.PcManagers.Level
         [SerializeField] private APatientBehaviour[] _patients;
         public List<ComboConfig> NewCombos;
         
+        public void Initialize()
+        {
+            foreach (var patient in _patients)
+            {
+                if(patient is IInitializable initializable)
+                    initializable.Initialize();
+            }
+        }
+        
         public void RestartLevel()
         {
             G.Get<PlayerManager>().Reset();
