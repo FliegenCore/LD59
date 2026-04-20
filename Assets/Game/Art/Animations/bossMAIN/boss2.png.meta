@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 869136a5d64278e4b8183d6f39c9c499
+guid: 29081c0ad10b5994298260bce8db9ccb
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -59,6 +59,21 @@ TextureImporter:
   - first:
       213: -9109820359469203680
     second: boss2_18
+  - first:
+      213: -1351834145309656312
+    second: boss2_19
+  - first:
+      213: -4732294319269435692
+    second: boss2_20
+  - first:
+      213: 5958019606861998738
+    second: boss2_21
+  - first:
+      213: -7971791123635969075
+    second: boss2_22
+  - first:
+      213: -2041998633863186922
+    second: boss2_23
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -158,9 +173,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 304
-        width: 168
-        height: 203
+        y: 801
+        width: 386
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,10 +194,10 @@ TextureImporter:
       name: boss2_1
       rect:
         serializedVersion: 2
-        x: 169
-        y: 311
-        width: 95
-        height: 207
+        x: 387
+        y: 801
+        width: 267
+        height: 238
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,10 +216,10 @@ TextureImporter:
       name: boss2_2
       rect:
         serializedVersion: 2
-        x: 264
-        y: 464
-        width: 8
-        height: 6
+        x: 654
+        y: 801
+        width: 555
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +238,10 @@ TextureImporter:
       name: boss2_3
       rect:
         serializedVersion: 2
-        x: 276
-        y: 450
-        width: 129
-        height: 65
+        x: 1209
+        y: 801
+        width: 148
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,10 +260,10 @@ TextureImporter:
       name: boss2_4
       rect:
         serializedVersion: 2
-        x: 405
-        y: 464
-        width: 117
-        height: 62
+        x: 1357
+        y: 808
+        width: 95
+        height: 207
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,10 +282,10 @@ TextureImporter:
       name: boss2_5
       rect:
         serializedVersion: 2
-        x: 465
-        y: 290
-        width: 55
-        height: 174
+        x: 1452
+        y: 770
+        width: 204
+        height: 263
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +304,10 @@ TextureImporter:
       name: boss2_6
       rect:
         serializedVersion: 2
-        x: 306
-        y: 407
-        width: 18
-        height: 24
+        x: 1656
+        y: 761
+        width: 124
+        height: 289
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,10 +326,10 @@ TextureImporter:
       name: boss2_7
       rect:
         serializedVersion: 2
-        x: 366
-        y: 427
-        width: 20
-        height: 23
+        x: 1780
+        y: 950
+        width: 150
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,10 +348,10 @@ TextureImporter:
       name: boss2_8
       rect:
         serializedVersion: 2
-        x: 386
-        y: 290
-        width: 79
-        height: 150
+        x: 1780
+        y: 755
+        width: 151
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,10 +370,10 @@ TextureImporter:
       name: boss2_9
       rect:
         serializedVersion: 2
-        x: 359
-        y: 388
-        width: 10
-        height: 10
+        x: 1
+        y: 1
+        width: 1435
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,10 +392,10 @@ TextureImporter:
       name: boss2_10
       rect:
         serializedVersion: 2
-        x: 356
-        y: 359
-        width: 15
-        height: 18
+        x: 1438
+        y: 801
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,10 +414,10 @@ TextureImporter:
       name: boss2_11
       rect:
         serializedVersion: 2
-        x: 270
-        y: 328
-        width: 14
-        height: 24
+        x: 1436
+        y: 446
+        width: 129
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,10 +436,10 @@ TextureImporter:
       name: boss2_12
       rect:
         serializedVersion: 2
-        x: 327
-        y: 338
-        width: 14
-        height: 16
+        x: 1565
+        y: 446
+        width: 195
+        height: 315
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -443,10 +458,10 @@ TextureImporter:
       name: boss2_13
       rect:
         serializedVersion: 2
-        x: 1
-        y: 125
-        width: 235
-        height: 179
+        x: 1760
+        y: 568
+        width: 91
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,10 +480,10 @@ TextureImporter:
       name: boss2_14
       rect:
         serializedVersion: 2
-        x: 250
-        y: 304
-        width: 10
-        height: 10
+        x: 1851
+        y: 580
+        width: 65
+        height: 129
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -487,10 +502,10 @@ TextureImporter:
       name: boss2_15
       rect:
         serializedVersion: 2
-        x: 264
-        y: 295
-        width: 12
-        height: 14
+        x: 1780
+        y: 548
+        width: 23
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,10 +524,10 @@ TextureImporter:
       name: boss2_16
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 396
-        height: 124
+        x: 1896
+        y: 568
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -531,10 +546,10 @@ TextureImporter:
       name: boss2_17
       rect:
         serializedVersion: 2
-        x: 236
-        y: 125
-        width: 135
-        height: 170
+        x: 1832
+        y: 541
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -553,10 +568,10 @@ TextureImporter:
       name: boss2_18
       rect:
         serializedVersion: 2
-        x: 397
-        y: 1
-        width: 124
-        height: 289
+        x: 1853
+        y: 538
+        width: 18
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -567,6 +582,116 @@ TextureImporter:
       bones: []
       spriteID: 02f773226aa639180800000000000000
       internalID: -9109820359469203680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss2_19
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 509
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bf295d1025d3de0800000000000000
+      internalID: -1351834145309656312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss2_20
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 488
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6a85fa363835eb0800000000000000
+      internalID: -4732294319269435692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss2_21
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 452
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a62d7f3432fa250800000000000000
+      internalID: 5958019606861998738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss2_22
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 446
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3e01c95328e5190800000000000000
+      internalID: -7971791123635969075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss2_23
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1
+        width: 445
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61670ccbf0d59a3e0800000000000000
+      internalID: -2041998633863186922
       vertices: []
       indices: 
       edges: []
@@ -596,7 +721,12 @@ TextureImporter:
       boss2_16: -421260862842373892
       boss2_17: -897386069521469673
       boss2_18: -9109820359469203680
+      boss2_19: -1351834145309656312
       boss2_2: -8802899300747328190
+      boss2_20: -4732294319269435692
+      boss2_21: 5958019606861998738
+      boss2_22: -7971791123635969075
+      boss2_23: -2041998633863186922
       boss2_3: 4169524099005658295
       boss2_4: 480899130577538277
       boss2_5: 5481625248867571558
