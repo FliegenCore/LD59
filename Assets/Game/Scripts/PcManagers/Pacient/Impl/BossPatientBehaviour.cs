@@ -24,6 +24,14 @@ namespace Game.Scripts.PcManagers.Pacient
             _isAlive = true;
         }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                UseItem(new UseItem(){Uid = "Pistol"}, null);
+            }
+        }
+
         public override void UseItem(UseItem useItem, Action callback)
         {
             if (useItem.Uid == "Pistol")
@@ -64,6 +72,9 @@ namespace Game.Scripts.PcManagers.Pacient
         {
             GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "complete game");
             G.Get<PlayerManager>().UnsubscribeOnCompleteCurrentAction(TryKillPlayer);
+            //show end
+            //show GG die
+            //show end cutscene
         }
     }
 }
