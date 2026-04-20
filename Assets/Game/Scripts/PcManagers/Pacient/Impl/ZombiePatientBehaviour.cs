@@ -8,11 +8,14 @@ using Game.Scripts.Tick;
 
 namespace Game.Scripts.PcManagers.Pacient
 {
-    public class ZombiePatientBehaviour : APatientBehaviour, IInitializable
+    public class ZombiePatientBehaviour : APatientBehaviour, IInitializable, IZombie
     {
+        private bool _isAlive;
+        
         public void Initialize()
         {
             G.Get<PlayerManager>().SubscribeOnCompleteCurrentAction(TryKillPlayer);
+            _isAlive = true;
         }
         
         public override void UseItem(UseItem useItem, Action callback)
@@ -31,12 +34,14 @@ namespace Game.Scripts.PcManagers.Pacient
 
         public override void Reset()
         {
+            _isAlive = true;
             base.Reset();
             G.Get<PlayerManager>().UnsubscribeOnCompleteCurrentAction(TryKillPlayer);
         }
 
         private void OnDie()
         {
+            _isAlive = false;
             G.Get<PlayerManager>().UnsubscribeOnCompleteCurrentAction(TryKillPlayer);
             _view.BoxCollider2D.enabled = false;
         }
@@ -49,6 +54,11 @@ namespace Game.Scripts.PcManagers.Pacient
                 _view.PlayAnimation("attack", false);
                 G.Get<PlayerManager>().PlayerDie();
             }
+        }
+
+        public bool IsAlive()
+        {
+            return _isAlive;
         }
     }
 }

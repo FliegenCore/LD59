@@ -1,8 +1,10 @@
+using Game.Scripts.PcManagers.Pacient;
 using Game.Scripts.PcManagers.Player.Impl.Components;
 using Game.Scripts.PcManagers.Player.Item;
 using Game.Scripts.PcManagers.Player.View;
 using Game.Scripts.Root;
 using Game.Scripts.Tick;
+using UnityEngine.UI;
 
 namespace Game.Scripts.PcManagers.Player.Impl
 {
@@ -17,13 +19,19 @@ namespace Game.Scripts.PcManagers.Player.Impl
         
         public override void Play()
         {
-            if (G.Get<Raycaster>().TryGetZombie(out var patient, _playerView.Origin))
+            if (G.Get<Raycaster>().TryGetPatient(out var patient, _playerView.Origin, 4f))
             {
-                _playerView.PlayAnimation("attack", false);
-                patient.UseItem(new UseItem{Uid = "Pistol"}, () =>
+                if (patient is IZombie zombie)
                 {
+                    if (zombie.IsAlive())
+                    {
+                        _playerView.PlayAnimation("attack", false);
+                        patient.UseItem(new UseItem{Uid = "Pistol"}, () =>
+                        {
                     
-                });   
+                        });
+                    }
+                }
             }
             else
             {

@@ -3,7 +3,6 @@ using Game.Scripts.PcManagers.Level;
 using Game.Scripts.PcManagers.Player.Item;
 using Game.Scripts.Root;
 using Game.Scripts.Tick;
-using UnityEngine;
 
 namespace Game.Scripts.PcManagers.Pacient
 {
@@ -24,8 +23,6 @@ namespace Game.Scripts.PcManagers.Pacient
                 {
                     G.Get<LevelManager>().RestartCurrentLevel();
                 });
-                
-                //взорваться или еще что 
             }
         }
     }

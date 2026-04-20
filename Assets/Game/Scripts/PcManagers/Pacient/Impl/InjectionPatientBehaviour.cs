@@ -24,8 +24,6 @@ namespace Game.Scripts.PcManagers.Pacient
                     G.Get<LevelManager>().RestartCurrentLevel();
                 });
                 _view.BoxCollider2D.enabled = false;
-                //взорваться или еще что
-                //вызвать проигрыш и перезапуск уровня
             }
         }
     }

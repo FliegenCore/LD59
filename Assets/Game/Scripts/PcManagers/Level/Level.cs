@@ -8,7 +8,7 @@ namespace Game.Scripts.PcManagers.Level
 {
     public class Level : MonoBehaviour
     {
-        [SerializeField] private APatientBehaviour[] _patients;
+        private APatientBehaviour[] _patients;
         public List<ComboConfig> NewCombos;
         
         public void Initialize()
