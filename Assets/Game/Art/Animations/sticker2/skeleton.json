@@ -1,0 +1,76 @@
+{
+"skeleton": {
+	"hash": "lIBtzKtpfik8sY2KE8pWdNEE9gI",
+	"spine": "3.8.0",
+	"x": -16.99,
+	"y": -485.07,
+	"width": 756.98,
+	"height": 649.78,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 472.81, "rotation": 131.99, "x": 528.06, "y": -351.84 },
+	{ "name": "bone2", "parent": "bone", "length": 72.42, "rotation": 20.12, "x": 439.67, "y": 55.35 },
+	{ "name": "bone3", "parent": "root", "length": 78.32, "rotation": 89.45, "x": 56.5, "y": 34.32 }
+],
+"slots": [
+	{ "name": "pal", "bone": "bone2", "attachment": "pal" },
+	{ "name": "sticker", "bone": "bone3", "attachment": "sticker" },
+	{ "name": "hand", "bone": "bone", "attachment": "hand" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"pal": {
+				"pal": { "x": 33.62, "y": -6.4, "rotation": -167.14, "width": 142, "height": 77 }
+			},
+			"hand": {
+				"hand": { "x": 227.83, "y": 19.04, "rotation": -147.02, "width": 671, "height": 420 }
+			},
+			"sticker": {
+				"sticker": { "x": 43.81, "y": -13.58, "rotation": -86.04, "width": 163, "height": 164 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"pal": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"hand": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"stick": {
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "x": 907.92, "y": -313.56 },
+					{ "time": 1.1, "x": 20.67, "y": 75.79 },
+					{ "time": 1.2333, "x": 3.12, "y": 41.21 },
+					{ "time": 1.3333 },
+					{ "time": 2, "x": 907.92, "y": -313.56 }
+				]
+			},
+			"bone3": {
+				"translate": [
+					{ "x": 896.4, "y": -323.7 },
+					{ "time": 1.1, "x": 21.12, "y": 45.7 },
+					{ "time": 1.2667, "curve": "stepped" },
+					{ "time": 2 }
+				]
+			}
+		}
+	}
+}
+}
