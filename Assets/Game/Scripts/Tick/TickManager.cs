@@ -1,4 +1,5 @@
 using System;
+using Spine.Unity;
 using UnityEngine;
 
 namespace Game.Scripts.Tick
@@ -13,6 +14,7 @@ namespace Game.Scripts.Tick
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private float _bpm = 124f;
         [SerializeField] private float _inputWindowDuration = 0.2f;
+        [SerializeField] private SkeletonAnimation _tickAnimation;
 
         private float _nextTickTime;
         private float _tickInterval;
@@ -73,6 +75,13 @@ namespace Game.Scripts.Tick
             if (_currentTickSound >= _tickSound.Length)
                 _currentTickSound = 0;
 
+            var trackEntry = _tickAnimation.AnimationState.SetAnimation(0, "tick", false);
+
+            trackEntry.Complete += (_) =>
+            {
+                _tickAnimation.AnimationState.SetAnimation(0, "idle", false);
+            };
+            
             _audioSource.PlayOneShot(_tickSound[_currentTickSound]);
             _currentTickSound++;
             _lastTickTime = Time.time;

@@ -8,10 +8,10 @@ namespace Game.Scripts.PcManagers
     {
         public void Initialize()
         {
+            G.Get<StickManager>().Initialize();
             G.Get<PlayerManager>().Initialize();
             G.Get<LevelManager>().Initialize();
                         
-            
             G.Get<LevelManager>().CreateLevel(0);
         }
     }

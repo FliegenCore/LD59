@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Game.Scripts.PcManagers.Player.Impl;
 using Game.Scripts.PcManagers.Player.View;
 using Game.Scripts.Root;
+using GameAnalyticsSDK;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ namespace Game.Scripts.PcManagers.Player
     public class PlayerManager : MonoBehaviour
     {
         private float _moveDistance;
+
+        public event Action<string> OnComboAdd;
         
         [SerializeField] private List<ComboConfig> _allCombos;
         [SerializeField] private List<ComboConfig> _startOpenedCombos;
@@ -79,8 +82,10 @@ namespace Game.Scripts.PcManagers.Player
         public void AddCombo(ComboConfig combo)
         {
             Debug.Log("add combo " + combo.Uid);
+            if (_openedCombos.ContainsKey(combo.Uid))
+                return;
             _openedCombos.Add(combo.Uid, combo);
-            //клеим стикер
+            OnComboAdd?.Invoke(combo.Uid);
         }
         
         private ComboConfig GetComboConfigByUid(string uid)

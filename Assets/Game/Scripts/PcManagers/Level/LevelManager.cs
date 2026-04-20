@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Game.Scripts.PcManagers.Player;
 using Game.Scripts.Root;
 using Game.Scripts.Tick;
+using GameAnalyticsSDK;
 using TMPro;
 using UnityEngine;
 
@@ -23,12 +24,15 @@ namespace Game.Scripts.PcManagers.Level
 
         public void NextLevel()
         {
+            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, $"{_currentLevelIndex}");
             _currentLevelIndex++;
             CreateLevel(_currentLevelIndex);
         }
         
         public void CreateLevel(int index)
         {
+            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, $"{index}");
+            
             _currentLevelText.text = $"{index + 1}/{_levelPrefabs.Count}";
             G.Get<TickManager>().Pause();
             _loadingWindow.Show(() =>
@@ -54,6 +58,7 @@ namespace Game.Scripts.PcManagers.Level
         
         public void RestartCurrentLevel()
         {
+            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, $"{_currentLevelIndex}");
             G.Get<TickManager>().Pause();
             _loadingWindow.Show(() =>
             {

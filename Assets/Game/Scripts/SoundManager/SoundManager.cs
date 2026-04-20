@@ -10,7 +10,7 @@ namespace Game.Scripts.SoundManager
         [SerializeField] private int _stepsCount = 5;                        
 
         private float[] _volumeStepsDB; 
-        private int _currentStep;       
+        private int _currentStep = 4;       
 
         private void Start()
         {

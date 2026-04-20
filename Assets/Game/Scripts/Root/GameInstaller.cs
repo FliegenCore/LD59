@@ -5,6 +5,7 @@ using Game.Scripts.PcManagers.Player.Impl.Components;
 using Game.Scripts.PcManagers.Player.View;
 using Game.Scripts.Player;
 using Game.Scripts.Tick;
+using GameAnalyticsSDK;
 using UnityEngine;
 
 namespace Game.Scripts.Root
@@ -18,6 +19,7 @@ namespace Game.Scripts.Root
         [SerializeField] private PlayerManager _playerManager;
         [SerializeField] private PlayerView _playerView;
         [SerializeField] private LevelManager _levelManager;
+        [SerializeField] private StickManager _stickerManager;
         
         private void Start()
         {
@@ -26,6 +28,9 @@ namespace Game.Scripts.Root
 
         private void RegisterAll()
         {
+            GameAnalytics.SetCustomId("myCustomUserId");
+            GameAnalytics.Initialize();
+            
             G.Register(new Raycaster());
             G.Register(_bufferView);
             G.Register(new BufferManager());
@@ -35,6 +40,7 @@ namespace Game.Scripts.Root
             G.Register(_playerView);
             G.Register(_playerManager);
             G.Register(_levelManager);
+            G.Register(_stickerManager);
             G.Register(new PcInitializer());
             G.Register(new GameBootstrap());
             

@@ -21,19 +21,12 @@ namespace Game.Scripts.PcManagers.Player.Impl
         {
             if (_raycaster.TryGetPatient(out var patient, _playerView.Origin))
             {
-                //play animation
                 _playerView.PlayAnimation("pills", false);
                 patient.UseItem(new UseItem{Uid = "Pill"}, () =>
                 {
                     
                 });   
             }
-            else
-            {
-                //кинуть таблетку
-            }
-            //do raycast
-            //health npc
         }
 
         public override void Stop()
