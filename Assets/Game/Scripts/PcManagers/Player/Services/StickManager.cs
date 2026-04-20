@@ -6,7 +6,6 @@ namespace Game.Scripts.PcManagers.Player
     {
         [SerializeField] private StickComboView[] _stickers;
 
-
         public void Initialize()
         {
             foreach (var sticker in _stickers)

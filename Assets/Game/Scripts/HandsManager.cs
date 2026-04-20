@@ -60,9 +60,12 @@ namespace Game.Scripts
             }
         }
         
-        private void PlayAnimation()
+        public void PlayEndAnimation()
         {
+            _animationState.SetEmptyAnimation(0,0);
+            _animationState.SetEmptyAnimation(1,0);
             
+            _animationState.SetAnimation(0, "handsOFF", false);
         }
     }
 }

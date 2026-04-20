@@ -12,6 +12,7 @@ namespace Game.Scripts.Tick
 
         [SerializeField] private AudioClip[] _tickSound;
         [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private AudioSource _pauseAudioSource;
         [SerializeField] private float _bpm = 124f;
         [SerializeField] private float _inputWindowDuration = 0.2f;
         [SerializeField] private SkeletonAnimation _tickAnimation;
@@ -62,6 +63,9 @@ namespace Game.Scripts.Tick
 
         public void Pause()
         {
+            if(!_isPaused)
+                _pauseAudioSource.Play();
+            
             _isPaused = true;
         }
 

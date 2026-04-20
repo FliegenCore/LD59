@@ -53,6 +53,7 @@ namespace Game.Scripts.PcManagers.Player.Impl
 
         public override void Reset()
         {
+            Stop();
             _nextMoveX = 0;
         }
 

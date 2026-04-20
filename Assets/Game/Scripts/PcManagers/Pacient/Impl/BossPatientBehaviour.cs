@@ -31,6 +31,7 @@ namespace Game.Scripts.PcManagers.Pacient
                 G.Get<TickManager>().Pause();
                 _view.BoxCollider2D.enabled = false;
                 _view.PlayAnimation("die", false);
+                G.Get<HandsManager>().PlayEndAnimation();
                 StartCoroutine(WaitDieSound());
                 BossDie();
             }
