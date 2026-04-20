@@ -1,0 +1,83 @@
+
+boss2.png
+size: 523,527
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Larm
+  rotate: false
+  xy: 2, 21
+  size: 166, 201
+  orig: 166, 201
+  offset: 0, 0
+  index: -1
+Rarm
+  rotate: false
+  xy: 170, 10
+  size: 93, 212
+  orig: 93, 212
+  offset: 0, 0
+  index: -1
+arm3
+  rotate: true
+  xy: 406, 2
+  size: 60, 115
+  orig: 60, 115
+  offset: 0, 0
+  index: -1
+arm4
+  rotate: false
+  xy: 466, 64
+  size: 53, 172
+  orig: 53, 172
+  offset: 0, 0
+  index: -1
+blood
+  rotate: false
+  xy: 265, 78
+  size: 120, 153
+  orig: 120, 153
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 224
+  size: 233, 177
+  orig: 233, 177
+  offset: 0, 0
+  index: -1
+damage
+  rotate: false
+  xy: 398, 238
+  size: 122, 287
+  orig: 140, 308
+  offset: 5, 8
+  index: -1
+head
+  rotate: false
+  xy: 237, 233
+  size: 133, 168
+  orig: 133, 168
+  offset: 0, 0
+  index: -1
+legs
+  rotate: false
+  xy: 2, 403
+  size: 394, 122
+  orig: 394, 122
+  offset: 0, 0
+  index: -1
+pew
+  rotate: false
+  xy: 265, 13
+  size: 139, 63
+  orig: 139, 63
+  offset: 0, 0
+  index: -1
+pew2
+  rotate: false
+  xy: 387, 88
+  size: 77, 148
+  orig: 85, 159
+  offset: 3, 6
+  index: -1
