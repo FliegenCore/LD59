@@ -13,6 +13,7 @@ namespace Game.Scripts
         [SerializeField] private AudioSource _rightClickSource;
         [SerializeField] private AudioSource _deadSound;
         [SerializeField] private SkeletonAnimation _skeletonAnimation;
+        [SerializeField] private SkeletonAnimation _finalAnimation;
         
         private Spine.AnimationState _animationState;
         private InputManager _inputManager;
@@ -63,6 +64,8 @@ namespace Game.Scripts
         
         public void PlayEndAnimation()
         {
+            _finalAnimation.gameObject.SetActive(true);
+            _finalAnimation.AnimationState.SetAnimation(0, "final", false);
             _animationState.SetEmptyAnimation(0,0);
             _animationState.SetEmptyAnimation(1,0);
             _deadSound.Play();
