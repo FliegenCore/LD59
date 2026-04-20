@@ -19,19 +19,13 @@ namespace Game.Scripts.PcManagers.Player.Impl
         
         public override void Play()
         {
-            if (G.Get<Raycaster>().TryGetPatient(out var patient, _playerView.Origin, 4f))
+            if (G.Get<Raycaster>().TryGetPatient(out var patient, _playerView.Origin, 4f) && patient is IZombie zombie && zombie.IsAlive())
             {
-                if (patient is IZombie zombie)
+                _playerView.PlayAnimation("attack", false);
+                patient.UseItem(new UseItem{Uid = "Pistol"}, () =>
                 {
-                    if (zombie.IsAlive())
-                    {
-                        _playerView.PlayAnimation("attack", false);
-                        patient.UseItem(new UseItem{Uid = "Pistol"}, () =>
-                        {
                     
-                        });
-                    }
-                }
+                });
             }
             else
             {

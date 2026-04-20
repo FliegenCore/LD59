@@ -15,6 +15,7 @@ namespace Game.Scripts.PcManagers.Level
 
             track.Complete += (_) =>
             {
+                _skeletonAnimation.AnimationState.SetEmptyAnimation(0,0);
                 gameObject.SetActive(false);
                 callback?.Invoke();
             };
