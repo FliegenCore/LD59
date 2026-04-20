@@ -17,10 +17,9 @@ namespace Game.Scripts.PcManagers.Player.Impl
         
         public override void Play()
         {
-            G.Get<TickManager>().Pause();
             if (G.Get<Raycaster>().TryGetZombie(out var patient, _playerView.Origin))
             {
-                _playerView.PlayAnimation("Pistol", false);
+                _playerView.PlayAnimation("attack", false);
                 patient.UseItem(new UseItem{Uid = "Pistol"}, () =>
                 {
                     
@@ -28,10 +27,7 @@ namespace Game.Scripts.PcManagers.Player.Impl
             }
             else
             {
-                _playerView.PlayAnimation("PistolAir", false, () =>
-                {
-                    G.Get<TickManager>().Unpause();
-                });
+                _playerView.PlayAnimation("attackAIR", false);
             }
         }
 

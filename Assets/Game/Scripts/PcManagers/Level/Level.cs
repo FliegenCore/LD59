@@ -13,6 +13,7 @@ namespace Game.Scripts.PcManagers.Level
         
         public void Initialize()
         {
+            _patients = transform.Find("Patients").GetComponentsInChildren<APatientBehaviour>();
             foreach (var patient in _patients)
             {
                 if(patient is IInitializable initializable)
@@ -23,10 +24,15 @@ namespace Game.Scripts.PcManagers.Level
         public void RestartLevel()
         {
             G.Get<PlayerManager>().Reset();
-            G.Get<PlayerManager>().Reset();
             foreach (var patient in _patients)
             {
                 patient.Reset();
+            }
+            
+            foreach (var patient in _patients)
+            {
+                if(patient is IInitializable initializable)
+                    initializable.Initialize();
             }
         }
     }

@@ -31,8 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6128773248407986222}
-  - {fileID: 6470164776805874142}
-  - {fileID: 7481921405733792455}
+  - {fileID: 7144553459276301314}
   - {fileID: 6903892778754585266}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -140,13 +139,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &7429912716745823886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7144553459276301314}
+  m_Layer: 0
+  m_Name: Patients
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7144553459276301314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7429912716745823886}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6470164776805874142}
+  - {fileID: 7481921405733792455}
+  m_Father: {fileID: 3471524671840904909}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &702407050126882481
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 3471524671840904909}
+    m_TransformParent: {fileID: 7144553459276301314}
     m_Modifications:
     - target: {fileID: 4467307501834575990, guid: 800a5cd20f63c5d479d5bfee2bd9bd90, type: 3}
       propertyPath: m_Name
@@ -219,7 +251,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 3471524671840904909}
+    m_TransformParent: {fileID: 7144553459276301314}
     m_Modifications:
     - target: {fileID: 2742262770621090674, guid: 1a9afe9410cadf1469c20e3e69eaf3fa, type: 3}
       propertyPath: m_LocalPosition.x

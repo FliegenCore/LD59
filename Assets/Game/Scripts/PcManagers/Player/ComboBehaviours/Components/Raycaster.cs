@@ -27,7 +27,7 @@ namespace Game.Scripts.PcManagers.Player.Impl.Components
         public bool TryGetZombie(out ZombiePatientBehaviour patientBehaviour, Transform origin)
         {
             patientBehaviour = null;
-            var hit = Physics2D.Raycast(origin.position, Vector2.right, 2.1f, LayerMask.GetMask("Patient"));
+            var hit = Physics2D.Raycast(origin.position, Vector2.right, 4f, LayerMask.GetMask("Patient"));
 
             if (hit.collider == null)
             {

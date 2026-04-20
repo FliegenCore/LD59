@@ -24,7 +24,7 @@ namespace Game.Scripts.PcManagers.Pacient
                 _view.PlayAnimation("die", false, () =>
                 {
                     G.Get<TickManager>().Unpause();
-                    
+                    OnDie();
                 });
             }
         }
@@ -35,16 +35,19 @@ namespace Game.Scripts.PcManagers.Pacient
             G.Get<PlayerManager>().UnsubscribeOnCompleteCurrentAction(TryKillPlayer);
         }
 
+        private void OnDie()
+        {
+            G.Get<PlayerManager>().UnsubscribeOnCompleteCurrentAction(TryKillPlayer);
+            _view.BoxCollider2D.enabled = false;
+        }
+
         private void TryKillPlayer()
         {
             if (G.Get<Raycaster>().TryGetPlayer(out _, _view.Origin))
             {
                 G.Get<TickManager>().Pause();
-                
-                _view.PlayAnimation("attack", false, () =>
-                {
-                    G.Get<PlayerManager>().PlayerDie();
-                });
+                _view.PlayAnimation("attack", false);
+                G.Get<PlayerManager>().PlayerDie();
             }
         }
     }
