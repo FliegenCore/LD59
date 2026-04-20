@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "SVxbHYzcjIcmaXh7q+lurtV6zM0",
+	"hash": "Ih9OXz0U7Oz+FrPakPgKDtWeTsw",
 	"spine": "3.8.0",
 	"x": -904.9,
 	"y": -265.59,
@@ -55,6 +55,29 @@
 	"right_click": { "audio": "right_click.mp3" }
 },
 "animations": {
+	"handsOFF": {
+		"bones": {
+			"left": {
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": 68.24, "y": -52.18 },
+					{ "time": 0.3667, "x": 74.26, "y": -2.01 },
+					{ "time": 0.5667, "x": 74.26, "y": -20.07 },
+					{ "time": 0.7333, "x": 28.1, "y": -449.57, "curve": "stepped" },
+					{ "time": 2.6667, "x": 28.1, "y": -449.57 }
+				]
+			},
+			"right": {
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": -4.01, "y": 56.2 },
+					{ "time": 0.4667, "x": -28.1, "y": 2.01 },
+					{ "time": 0.6, "x": -56.2, "y": 80.28 },
+					{ "time": 0.7333, "x": 26.09, "y": -515.8 }
+				]
+			}
+		}
+	},
 	"left_click": {
 		"bones": {
 			"left": {
