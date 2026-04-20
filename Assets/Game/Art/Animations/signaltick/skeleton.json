@@ -1,0 +1,56 @@
+{
+"skeleton": {
+	"hash": "QavFjqjMXYmM3vIuyoq8NDlKA5k",
+	"spine": "3.8.0",
+	"x": -117.5,
+	"y": -5.5,
+	"width": 232,
+	"height": 175,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 105, "rotation": 90.55, "x": 17, "y": 30 },
+	{ "name": "bone2", "parent": "bone", "x": 27.2, "y": 20.74 }
+],
+"slots": [
+	{ "name": "body", "bone": "bone", "attachment": "body" },
+	{ "name": "signal", "bone": "bone2", "attachment": "signal" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"body": {
+				"body": { "x": 52.17, "y": 18, "rotation": -90.55, "width": 232, "height": 175 }
+			},
+			"signal": {
+				"signal": { "x": 3.91, "y": -9.54, "rotation": -90.55, "width": 87, "height": 50 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"signal": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			}
+		}
+	},
+	"tick": {
+		"slots": {
+			"signal": {
+				"color": [
+					{ "color": "ffffffc8" },
+					{ "time": 0.2, "color": "ffffffff" },
+					{ "time": 0.4, "color": "ffffff5d" }
+				]
+			}
+		}
+	}
+}
+}
