@@ -64,9 +64,6 @@ namespace Game.Scripts.PcManagers.Pacient
         {
             GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "complete game");
             G.Get<PlayerManager>().UnsubscribeOnCompleteCurrentAction(TryKillPlayer);
-            //show end
-            //show GG die
-            //show end cutscene
         }
     }
 }
