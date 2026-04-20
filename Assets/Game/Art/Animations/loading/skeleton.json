@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "wZJ6+IS3PG/9lUiG/H81TrGCatw",
+	"hash": "+1flnvNToIPFFbKK3kh7n7EYUc0",
 	"spine": "3.8.0",
 	"x": -485.81,
 	"y": 1.21,
@@ -45,8 +45,7 @@
 		"slots": {
 			"bg": {
 				"color": [
-					{ "color": "ffffff00" },
-					{ "time": 0.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "color": "ffffffff", "curve": "stepped" },
 					{ "time": 1.5, "color": "ffffffff" },
 					{ "time": 1.8667, "color": "ffffff00" }
 				]
