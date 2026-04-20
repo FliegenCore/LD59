@@ -2366,12 +2366,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelParent: {fileID: 810469601}
   _levelPrefabs:
-  - {fileID: -5514404816076687341, guid: 680bffc4d6f41844e8afa267b4ca40ae, type: 3}
   - {fileID: -5514404816076687341, guid: f0867e195afd90147ac91fcccfb41a81, type: 3}
   - {fileID: -5514404816076687341, guid: 1400640aa87c40645ae428ef22d2eb1a, type: 3}
   - {fileID: -5514404816076687341, guid: 1459032d616d2824782f282379d58818, type: 3}
   - {fileID: -5514404816076687341, guid: cdb9a080397ea4041ba2cc480e7ba6b9, type: 3}
   - {fileID: -5514404816076687341, guid: 1bbdbc659d2ce234fb01d3d3af9dfaae, type: 3}
+  - {fileID: -5514404816076687341, guid: 680bffc4d6f41844e8afa267b4ca40ae, type: 3}
   _loadingWindow: {fileID: 2124339198}
   _currentLevelText: {fileID: 1644432435}
 --- !u!1 &1644432433

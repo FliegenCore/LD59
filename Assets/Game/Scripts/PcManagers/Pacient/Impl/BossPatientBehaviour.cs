@@ -20,6 +20,7 @@ namespace Game.Scripts.PcManagers.Pacient
         
         public void Initialize()
         {
+            G.Get<PlayerManager>().SubscribeOnCompleteCurrentAction(TryKillPlayer);
             _isAlive = true;
         }
 
@@ -45,11 +46,23 @@ namespace Game.Scripts.PcManagers.Pacient
         {
             _isAlive = true;
             base.Reset();
+            G.Get<PlayerManager>().UnsubscribeOnCompleteCurrentAction(TryKillPlayer);
+        }
+        
+        private void TryKillPlayer()
+        {
+            if (G.Get<Raycaster>().TryGetPlayer(out _, _view.Origin))
+            {
+                G.Get<TickManager>().Pause();
+                _view.PlayAnimation("attack", false);
+                G.Get<PlayerManager>().PlayerDie();
+            }
         }
         
         private void BossDie()
         {
             GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "complete game");
+            G.Get<PlayerManager>().UnsubscribeOnCompleteCurrentAction(TryKillPlayer);
             //show end
             //show GG die
             //show end cutscene
