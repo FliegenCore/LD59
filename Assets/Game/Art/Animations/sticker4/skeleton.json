@@ -1,0 +1,91 @@
+{
+"skeleton": {
+	"hash": "uVWCMrkAMu/lK1Ss7dR9l9mQNcY",
+	"spine": "3.8.0",
+	"x": -632.5,
+	"y": -436,
+	"width": 766,
+	"height": 564.5,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 670.86, "rotation": 28.39, "x": -501.31, "y": -329.06 },
+	{ "name": "bone2", "parent": "bone", "length": 94.45, "rotation": -7.99, "x": 541.56, "y": 102.12 },
+	{ "name": "bone3", "parent": "bone", "length": 102.21, "rotation": -120.3, "x": 711.24, "y": 120.09 }
+],
+"slots": [
+	{ "name": "hand", "bone": "bone", "attachment": "hand" },
+	{ "name": "sticker", "bone": "bone3", "attachment": "sticker" },
+	{ "name": "pal", "bone": "bone2", "attachment": "pal" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"pal": {
+				"pal": { "x": 18.2, "y": -36.9, "rotation": -20.39, "width": 158, "height": 154 }
+			},
+			"hand": {
+				"hand": { "x": 284.8, "y": -2.65, "rotation": -28.39, "width": 766, "height": 480 }
+			},
+			"sticker": {
+				"sticker": { "x": 52.78, "y": -1.06, "rotation": 91.91, "width": 137, "height": 133 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"hand": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"pal": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone3": {
+				"shear": [
+					{},
+					{ "time": 1.5, "x": -3.45 },
+					{ "time": 2 }
+				]
+			}
+		}
+	},
+	"stick": {
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "x": -1090.58, "y": -421.87 },
+					{ "time": 1.1, "x": -25.02, "y": 18.63 },
+					{ "time": 1.2667, "x": -5.82, "y": -15.29 },
+					{ "time": 1.3333, "curve": "stepped" },
+					{ "time": 1.5 },
+					{ "time": 2, "x": -1090.58, "y": -421.87 }
+				]
+			},
+			"bone3": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 1.3333 },
+					{ "time": 1.5, "x": 0.45, "y": -2.58 },
+					{ "time": 2, "x": 1159.5, "y": -148.29 }
+				],
+				"shear": [
+					{ "time": 1.5 },
+					{ "time": 1.6667, "x": -4.25 },
+					{ "time": 2 }
+				]
+			}
+		}
+	}
+}
+}

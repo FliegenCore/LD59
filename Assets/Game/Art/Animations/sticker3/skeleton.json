@@ -1,0 +1,91 @@
+{
+"skeleton": {
+	"hash": "U64yaFRHi2g1zcuFqHi2E0VvyzA",
+	"spine": "3.8.0",
+	"x": -14.97,
+	"y": -284.16,
+	"width": 859.01,
+	"height": 444.03,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 701.75, "rotation": 157.89, "x": 775.36, "y": -219.94 },
+	{ "name": "bone2", "parent": "bone", "length": 140.24, "rotation": 9.17, "x": 558.92, "y": 27.7 },
+	{ "name": "bone3", "parent": "bone", "length": 107.58, "rotation": 112.54, "x": 783.36, "y": -40.35 }
+],
+"slots": [
+	{ "name": "pal", "bone": "bone2", "attachment": "pal" },
+	{ "name": "sticker", "bone": "bone3", "attachment": "sticker" },
+	{ "name": "hand", "bone": "bone", "attachment": "hand" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"pal": {
+				"pal": { "x": 80.51, "y": -4.51, "rotation": -167.06, "width": 149, "height": 69 }
+			},
+			"hand": {
+				"hand": { "x": 324.86, "y": 5.18, "rotation": -157.92, "width": 743, "height": 363 }
+			},
+			"sticker": {
+				"sticker": { "x": 35.41, "y": -0.04, "rotation": 89.57, "width": 160, "height": 166 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"hand": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"pal": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone3": {
+				"translate": [
+					{ "x": 2.89, "y": -2.54 }
+				],
+				"shear": [
+					{},
+					{ "time": 1.1667, "x": 2.63 },
+					{ "time": 2 }
+				]
+			}
+		}
+	},
+	"stick": {
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "x": 1047.99, "y": -425.75 },
+					{ "time": 1.1, "x": 5.17, "y": 34.44 },
+					{ "time": 1.2, "x": -1.72, "y": 3.44, "curve": "stepped" },
+					{ "time": 1.3333, "x": -1.72, "y": 3.44 },
+					{ "time": 2, "x": 1047.99, "y": -425.75 }
+				]
+			},
+			"bone3": {
+				"translate": [
+					{ "time": 1.3333 },
+					{ "time": 2, "x": 1136.15, "y": -1.53 }
+				],
+				"shear": [
+					{ "time": 1.3333 },
+					{ "time": 1.4667, "x": 8.08 },
+					{ "time": 1.6667 }
+				]
+			}
+		}
+	}
+}
+}
