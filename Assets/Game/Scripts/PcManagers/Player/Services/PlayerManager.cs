@@ -27,6 +27,7 @@ namespace Game.Scripts.PcManagers.Player
         private Dictionary<string, ComboConfig> _openedCombos = new ();
         private Combo _currentCombo;
 
+        private bool _isDie;
         private BufferManager _bufferManager;
         
         public void Initialize()
@@ -49,6 +50,7 @@ namespace Game.Scripts.PcManagers.Player
 
         public void Reset()
         {
+            _isDie = false;
             _playerView.transform.localPosition = new Vector2(0, -0.49f);
             _playerView.PlayAnimation("idle", true);
 
@@ -126,6 +128,10 @@ namespace Game.Scripts.PcManagers.Player
 
         public void PlayerDie()
         {
+            if (_isDie)
+                return;
+
+            _isDie = true;
             StartCoroutine(PlayDieSound());
             _playerView.PlayAnimation("die", false, G.Get<LevelManager>().RestartCurrentLevel);
         }
