@@ -2429,7 +2429,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tickSound:
-  - {fileID: 8300000, guid: 60e552ea693e9a4468aa0694fe2f1805, type: 3}
+  - {fileID: 8300000, guid: 6371fe5ab33f1eb4f80f19fcaeee5cef, type: 3}
+  - {fileID: 8300000, guid: 0545ca5cd18bc1646a83e31e4bbd1203, type: 3}
+  - {fileID: 8300000, guid: eef803279a37b294e820b576e3abf594, type: 3}
+  - {fileID: 8300000, guid: 7963d63ceeeec0d4fbc5c74d635ff9f5, type: 3}
   _audioSource: {fileID: 1528391315}
   _bpm: 124
   _inputWindowDuration: 0.2
