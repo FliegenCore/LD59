@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "1oxwKzToL9wWmBziwUFKA2JRRXc",
+	"hash": "NJb8oPxayfmnJlpeQsR0QyFvc9o",
 	"spine": "3.8.0",
 	"x": -242.5,
 	"y": -4,
@@ -69,18 +69,18 @@
 "animations": {
 	"attack": {
 		"slots": {
-			"damage": {
-				"color": [
-					{ "time": 0.3333, "color": "ffffff00" },
-					{ "time": 0.5, "color": "ffffffff" },
-					{ "time": 0.6, "color": "ffffff00" }
-				]
-			},
 			"blood": {
 				"color": [
 					{ "time": 0.4333, "color": "ffffff00" },
 					{ "time": 0.5333, "color": "ffffffff" },
 					{ "time": 0.6667, "color": "ffffff00" }
+				]
+			},
+			"damage": {
+				"color": [
+					{ "time": 0.3333, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" },
+					{ "time": 0.6, "color": "ffffff00" }
 				]
 			}
 		},
@@ -130,13 +130,6 @@
 	},
 	"die": {
 		"slots": {
-			"Larm": {
-				"color": [
-					{ "time": 0.6333, "color": "ffffffff" },
-					{ "time": 0.7, "color": "141414ff" },
-					{ "time": 1, "color": "14141400" }
-				]
-			},
 			"legs": {
 				"color": [
 					{ "time": 0.6333, "color": "ffffffff" },
@@ -151,9 +144,22 @@
 					{ "time": 1, "color": "14141400" }
 				]
 			},
+			"pew2": {
+				"color": [
+					{ "time": 0.5, "color": "ffffffff" },
+					{ "time": 0.7, "color": "ffffff00" }
+				]
+			},
 			"head": {
 				"color": [
 					{ "time": 0.5667, "color": "ffffffff" },
+					{ "time": 0.7, "color": "141414ff" },
+					{ "time": 1, "color": "14141400" }
+				]
+			},
+			"Rarm": {
+				"color": [
+					{ "time": 0.6333, "color": "ffffffff" },
 					{ "time": 0.7, "color": "141414ff" },
 					{ "time": 1, "color": "14141400" }
 				]
@@ -165,23 +171,17 @@
 					{ "time": 0.9, "color": "ffffff00" }
 				]
 			},
-			"blood": {
-				"color": [
-					{ "time": 0.7333, "color": "ffffffff" },
-					{ "time": 0.9667, "color": "ffffff00" }
-				]
-			},
-			"pew2": {
-				"color": [
-					{ "time": 0.5, "color": "ffffffff" },
-					{ "time": 0.7, "color": "ffffff00" }
-				]
-			},
-			"Rarm": {
+			"Larm": {
 				"color": [
 					{ "time": 0.6333, "color": "ffffffff" },
 					{ "time": 0.7, "color": "141414ff" },
 					{ "time": 1, "color": "14141400" }
+				]
+			},
+			"blood": {
+				"color": [
+					{ "time": 0.7333, "color": "ffffffff" },
+					{ "time": 0.9667, "color": "ffffff00" }
 				]
 			}
 		},

@@ -390,9 +390,9 @@ TextureImporter:
       name: skeleton_11
       rect:
         serializedVersion: 2
-        x: 181
+        x: 185
         y: 332
-        width: 133
+        width: 129
         height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
