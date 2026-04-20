@@ -11,6 +11,7 @@ namespace Game.Scripts
     {
         [SerializeField] private AudioSource _leftClickSource;
         [SerializeField] private AudioSource _rightClickSource;
+        [SerializeField] private AudioSource _deadSound;
         [SerializeField] private SkeletonAnimation _skeletonAnimation;
         
         private Spine.AnimationState _animationState;
@@ -64,7 +65,7 @@ namespace Game.Scripts
         {
             _animationState.SetEmptyAnimation(0,0);
             _animationState.SetEmptyAnimation(1,0);
-            
+            _deadSound.Play();
             _animationState.SetAnimation(0, "handsOFF", false);
         }
     }
