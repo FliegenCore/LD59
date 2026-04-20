@@ -44,11 +44,22 @@ namespace Game.Scripts.PcManagers.Level
                 _currentLevel = null;
             }
             
-            Instantiate(_levelPrefabs[index], _levelParent);
+            _currentLevel = Instantiate(_levelPrefabs[index], _levelParent);
+            
+            foreach (var newCombo in _currentLevel.NewCombos)
+            {
+                G.Get<PlayerManager>().AddCombo(newCombo);
+            }
         }
         
         public void RestartCurrentLevel()
         {
+            G.Get<TickManager>().Pause();
+            _loadingWindow.Show(() =>
+            {
+                G.Get<TickManager>().Unpause();
+            });
+            
             _currentLevel.RestartLevel();
         }
     }

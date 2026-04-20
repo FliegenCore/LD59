@@ -18,7 +18,6 @@ namespace Game.Scripts.PcManagers.Pacient
             _view.PlayAnimation("idle", true);
         }
 
-
         protected void GoodResult()
         {
             G.Get<TickManager>().Pause();
