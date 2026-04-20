@@ -16,6 +16,7 @@ namespace Game.Scripts.Tick
         [SerializeField] private float _bpm = 124f;
         [SerializeField] private float _inputWindowDuration = 0.2f;
         [SerializeField] private SkeletonAnimation _tickAnimation;
+        [SerializeField] private SkeletonAnimation _signalTickAnimation;
 
         private float _nextTickTime;
         private float _tickInterval;
@@ -84,6 +85,13 @@ namespace Game.Scripts.Tick
             trackEntry.Complete += (_) =>
             {
                 _tickAnimation.AnimationState.SetAnimation(0, "idle", false);
+            };
+            
+            var signalTrackEntry = _signalTickAnimation.AnimationState.SetAnimation(0, "tick", false);
+            
+            signalTrackEntry.Complete += (_) =>
+            {
+                _signalTickAnimation.AnimationState.SetAnimation(0, "idle", false);
             };
             
             _audioSource.PlayOneShot(_tickSound[_currentTickSound]);
