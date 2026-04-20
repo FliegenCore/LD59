@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
-  m_Name: skeleton_Atlas
+  m_Name: bolnoiPill_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 9873af6768a0cc64bbe7cbc4be586543, type: 3}
+  atlasFile: {fileID: 4900000, guid: 7f76befdbc8168c40a049e03e46f067b, type: 3}
   materials:
-  - {fileID: 2100000, guid: 4114d49fcad51f9469cb6475ca9f3d8a, type: 2}
+  - {fileID: 2100000, guid: 47cfc50035a67844dad1886b97dc652d, type: 2}

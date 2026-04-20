@@ -1,89 +1,103 @@
 
 DOC.png
-size: 400,547
+size: 257,961
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 Legs2
   rotate: false
-  xy: 111, 5
+  xy: 2, 515
   size: 198, 128
   orig: 202, 132
   offset: 2, 2
   index: -1
 PILS
-  rotate: false
-  xy: 109, 338
+  rotate: true
+  xy: 203, 536
   size: 109, 48
   orig: 113, 52
   offset: 2, 2
   index: -1
+UKOL
+  rotate: false
+  xy: 203, 647
+  size: 52, 168
+  orig: 52, 168
+  offset: 0, 0
+  index: -1
 arm1
   rotate: false
-  xy: 2, 2
+  xy: 127, 13
   size: 107, 131
   orig: 111, 135
   offset: 2, 2
   index: -1
 arm2
   rotate: true
-  xy: 311, 21
+  xy: 161, 290
   size: 112, 87
   orig: 116, 91
   offset: 2, 2
   index: -1
 armRADIO
-  rotate: false
-  xy: 2, 336
+  rotate: true
+  xy: 2, 823
   size: 105, 209
   orig: 109, 213
   offset: 2, 2
   index: -1
 body
   rotate: true
-  xy: 268, 246
+  xy: 2, 2
   size: 142, 123
   orig: 146, 127
   offset: 2, 2
   index: -1
 dust1
-  rotate: true
-  xy: 180, 179
+  rotate: false
+  xy: 2, 284
   size: 157, 86
   orig: 161, 90
   offset: 2, 2
   index: -1
 head
-  rotate: false
-  xy: 109, 388
+  rotate: true
+  xy: 2, 372
   size: 141, 157
   orig: 145, 161
   offset: 2, 2
   index: -1
 legs1
-  rotate: true
-  xy: 252, 390
+  rotate: false
+  xy: 2, 146
   size: 155, 136
   orig: 159, 140
   offset: 2, 2
   index: -1
 lyamka
-  rotate: true
-  xy: 180, 137
+  rotate: false
+  xy: 213, 817
   size: 40, 111
   orig: 44, 115
   offset: 2, 2
   index: -1
 pack
-  rotate: false
-  xy: 2, 135
+  rotate: true
+  xy: 2, 645
   size: 176, 199
   orig: 180, 203
   offset: 2, 2
   index: -1
+shadow
+  rotate: false
+  xy: 2, 930
+  size: 227, 29
+  orig: 227, 29
+  offset: 0, 0
+  index: -1
 what
   rotate: true
-  xy: 293, 135
+  xy: 161, 404
   size: 109, 94
   orig: 109, 94
   offset: 0, 0
