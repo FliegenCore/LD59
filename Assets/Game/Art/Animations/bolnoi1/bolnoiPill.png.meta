@@ -1,61 +1,70 @@
 fileFormatVersion: 2
-guid: 130b9793efbe0da4cb0cd66a30d71cf8
+guid: e2ffef47a5adbd64bb952a826fc8075f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4920259681749509356
-    second: DOC_0
+      213: -8886170638961263316
+    second: bolnoiPill_0
   - first:
-      213: -5199930623306721152
-    second: DOC_1
+      213: 6013480806807628598
+    second: bolnoiPill_1
   - first:
-      213: -9136135000008320479
-    second: DOC_2
+      213: -1558701541828788630
+    second: bolnoiPill_2
   - first:
-      213: -8940682641258703824
-    second: DOC_3
+      213: 5327733747640460952
+    second: bolnoiPill_3
   - first:
-      213: -4591164964934751735
-    second: DOC_4
+      213: 2970417827287737788
+    second: bolnoiPill_4
   - first:
-      213: 6963608688401024733
-    second: DOC_5
+      213: 3719773953142455183
+    second: bolnoiPill_5
   - first:
-      213: 1538344242111369519
-    second: DOC_6
+      213: -7394994077799223353
+    second: bolnoiPill_6
   - first:
-      213: -5794219233997040094
-    second: DOC_7
+      213: -3291298624684922165
+    second: bolnoiPill_7
   - first:
-      213: -2123157708921797986
-    second: DOC_8
+      213: -4190109219103282409
+    second: bolnoiPill_8
   - first:
-      213: 1176844206907345026
-    second: DOC_9
+      213: 4172427731930488377
+    second: bolnoiPill_9
   - first:
-      213: 34710838941361040
-    second: DOC_10
+      213: 1040344661661611081
+    second: bolnoiPill_10
   - first:
-      213: -4415673416386318941
-    second: DOC_11
+      213: -3447753596195546621
+    second: bolnoiPill_11
   - first:
-      213: 2873080884997606452
-    second: DOC_12
+      213: -7652136528352252342
+    second: bolnoiPill_12
   - first:
-      213: -1370544061781681221
-    second: DOC_13
+      213: -8212005598487857421
+    second: bolnoiPill_13
   - first:
-      213: -3187581094154869034
-    second: DOC_14
+      213: -7761374201232219927
+    second: bolnoiPill_14
   - first:
-      213: -5162138053902417600
-    second: DOC_15
+      213: 4904528741407449232
+    second: bolnoiPill_15
   - first:
-      213: 8402431027371029523
-    second: DOC_16
+      213: -2801107121831873919
+    second: bolnoiPill_16
   - first:
-      213: 8467050613848635652
-    second: DOC_17
+      213: -260716678074154843
+    second: bolnoiPill_17
+  - first:
+      213: 9036295963089064728
+    second: bolnoiPill_18
+  - first:
+      213: 4609219855386603166
+    second: bolnoiPill_19
+  - first:
+      213: 4437216719481070440
+    second: bolnoiPill_20
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -151,364 +160,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DOC_0
+      name: bolnoiPill_0
       rect:
         serializedVersion: 2
         x: 1
-        y: 816
-        width: 125
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce42b55ac16484440800000000000000
-      internalID: 4920259681749509356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_1
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 678
-        width: 157
-        height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 088902506a226d7b0800000000000000
-      internalID: -5199930623306721152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_2
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 816
-        width: 109
-        height: 133
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12a9d707f9de53180800000000000000
-      internalID: -9136135000008320479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_3
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 626
-        width: 30
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 034164ee1805ce380800000000000000
-      internalID: -8940682641258703824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_4
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 654
-        width: 21
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 90a68d71ac7e840c0800000000000000
-      internalID: -4591164964934751735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 558
-        width: 89
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd687f21535b3a060800000000000000
-      internalID: 6963608688401024733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_6
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 606
-        width: 43
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f21d05d00fb495510800000000000000
-      internalID: 1538344242111369519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_7
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 619
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 226ded64e4cc69fa0800000000000000
-      internalID: -5794219233997040094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_8
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 447
-        width: 159
-        height: 143
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e92859d00570982e0800000000000000
-      internalID: -2123157708921797986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_9
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 590
-        width: 30
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28840bc229df45010800000000000000
-      internalID: 1176844206907345026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_10
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 317
-        width: 200
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 093a4f8f2515b7000800000000000000
-      internalID: 34710838941361040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_11
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 447
-        width: 96
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3ad682c4c6068b2c0800000000000000
-      internalID: -4415673416386318941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_12
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 139
-        width: 201
-        height: 178
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 43c4f39b7db3fd720800000000000000
-      internalID: 2873080884997606452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_13
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 315
-        width: 50
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bbb5b70ff69dafce0800000000000000
-      internalID: -1370544061781681221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_14
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 145
-        width: 54
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d6e52622ef63c3d0800000000000000
-      internalID: -3187581094154869034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_15
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 32
-        width: 211
-        height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 041ce974ac66c58b0800000000000000
-      internalID: -5162138053902417600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DOC_16
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 229
+        y: 801
+        width: 232
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -518,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 314bb2c508e6b9470800000000000000
-      internalID: 8402431027371029523
+      spriteID: c2d353382eafda480800000000000000
+      internalID: -8886170638961263316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DOC_17
+      name: bolnoiPill_1
       rect:
         serializedVersion: 2
-        x: 212
-        y: 32
-        width: 42
-        height: 113
+        x: 1
+        y: 1
+        width: 1435
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,8 +197,426 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40973b54ca1018570800000000000000
-      internalID: 8467050613848635652
+      spriteID: 63be569deec247350800000000000000
+      internalID: 6013480806807628598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 801
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ef070c4316e5ae0800000000000000
+      internalID: -1558701541828788630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_3
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 761
+        width: 115
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89668fdad99efe940800000000000000
+      internalID: 5327733747640460952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_4
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 761
+        width: 96
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb529f5a64b093920800000000000000
+      internalID: 2970417827287737788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_5
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 759
+        width: 86
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b7ec1c3ba4f9330800000000000000
+      internalID: 3719773953142455183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_6
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 777
+        width: 69
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfe8ac0114bf5990800000000000000
+      internalID: -7394994077799223353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_7
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 709
+        width: 95
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca6ce1c655f252d0800000000000000
+      internalID: -3291298624684922165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_8
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 679
+        width: 143
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b62498dddb9d5c0800000000000000
+      internalID: -4190109219103282409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_9
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 446
+        width: 195
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e94bc6ae077e930800000000000000
+      internalID: 4172427731930488377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_10
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 709
+        width: 111
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944705235fb007e00800000000000000
+      internalID: 1040344661661611081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_11
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 446
+        width: 204
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a50b90f5e1720d0800000000000000
+      internalID: -3447753596195546621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_12
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 661
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ee5c6ce562ec590800000000000000
+      internalID: -7652136528352252342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_13
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 626
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6bc90da68190e80800000000000000
+      internalID: -8212005598487857421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_14
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 624
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e02ca6194f0a4490800000000000000
+      internalID: -7761374201232219927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_15
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 639
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090e84ea7e2601440800000000000000
+      internalID: 4904528741407449232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_16
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 608
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182f461e9e77029d0800000000000000
+      internalID: -2801107121831873919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_17
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 461
+        width: 150
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0ce58009fb16cf0800000000000000
+      internalID: -260716678074154843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_18
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 1
+        width: 445
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81358355d4f576d70800000000000000
+      internalID: 9036295963089064728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_19
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 325
+        width: 129
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9eeefba90d37ff30800000000000000
+      internalID: 4609219855386603166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolnoiPill_20
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 1
+        width: 129
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863e714d819249d30800000000000000
+      internalID: 4437216719481070440
       vertices: []
       indices: 
       edges: []
@@ -560,24 +635,27 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DOC_0: 4920259681749509356
-      DOC_1: -5199930623306721152
-      DOC_10: 34710838941361040
-      DOC_11: -4415673416386318941
-      DOC_12: 2873080884997606452
-      DOC_13: -1370544061781681221
-      DOC_14: -3187581094154869034
-      DOC_15: -5162138053902417600
-      DOC_16: 8402431027371029523
-      DOC_17: 8467050613848635652
-      DOC_2: -9136135000008320479
-      DOC_3: -8940682641258703824
-      DOC_4: -4591164964934751735
-      DOC_5: 6963608688401024733
-      DOC_6: 1538344242111369519
-      DOC_7: -5794219233997040094
-      DOC_8: -2123157708921797986
-      DOC_9: 1176844206907345026
+      bolnoiPill_0: -8886170638961263316
+      bolnoiPill_1: 6013480806807628598
+      bolnoiPill_10: 1040344661661611081
+      bolnoiPill_11: -3447753596195546621
+      bolnoiPill_12: -7652136528352252342
+      bolnoiPill_13: -8212005598487857421
+      bolnoiPill_14: -7761374201232219927
+      bolnoiPill_15: 4904528741407449232
+      bolnoiPill_16: -2801107121831873919
+      bolnoiPill_17: -260716678074154843
+      bolnoiPill_18: 9036295963089064728
+      bolnoiPill_19: 4609219855386603166
+      bolnoiPill_2: -1558701541828788630
+      bolnoiPill_20: 4437216719481070440
+      bolnoiPill_3: 5327733747640460952
+      bolnoiPill_4: 2970417827287737788
+      bolnoiPill_5: 3719773953142455183
+      bolnoiPill_6: -7394994077799223353
+      bolnoiPill_7: -3291298624684922165
+      bolnoiPill_8: -4190109219103282409
+      bolnoiPill_9: 4172427731930488377
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
