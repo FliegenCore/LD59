@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Game.Scripts.PcManagers.Level;
 using Game.Scripts.PcManagers.Player.Impl;
@@ -17,7 +18,8 @@ namespace Game.Scripts.PcManagers.Player
         private float _moveDistance;
 
         public event Action<string> OnComboAdd;
-        
+
+        [SerializeField] private AudioSource _onDie;
         [SerializeField] private List<ComboConfig> _allCombos;
         [SerializeField] private List<ComboConfig> _startOpenedCombos;
         private PlayerView _playerView;
@@ -124,7 +126,14 @@ namespace Game.Scripts.PcManagers.Player
 
         public void PlayerDie()
         {
+            StartCoroutine(PlayDieSound());
             _playerView.PlayAnimation("die", false, G.Get<LevelManager>().RestartCurrentLevel);
+        }
+
+        private IEnumerator PlayDieSound()
+        {
+            yield return new WaitForSeconds(0.5f);
+            _onDie.Play();
         }
     }
 }
