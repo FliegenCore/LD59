@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -5730077849335931807
     second: clava_hand_4
+  - first:
+      213: 2134924608486538009
+    second: clava_hand_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,45 +111,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -155,9 +119,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1
-        width: 519
-        height: 300
+        y: 492
+        width: 659
+        height: 491
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +140,10 @@ TextureImporter:
       name: clava_hand_1
       rect:
         serializedVersion: 2
-        x: 520
-        y: 1
-        width: 518
-        height: 300
+        x: 660
+        y: 552
+        width: 104
+        height: 444
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,10 +162,10 @@ TextureImporter:
       name: clava_hand_2
       rect:
         serializedVersion: 2
-        x: 1038
-        y: 1
-        width: 539
-        height: 263
+        x: 764
+        y: 774
+        width: 204
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +184,10 @@ TextureImporter:
       name: clava_hand_3
       rect:
         serializedVersion: 2
-        x: 1577
-        y: 145
-        width: 148
-        height: 150
+        x: 764
+        y: 552
+        width: 204
+        height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +206,10 @@ TextureImporter:
       name: clava_hand_4
       rect:
         serializedVersion: 2
-        x: 1577
+        x: 1
         y: 1
-        width: 160
-        height: 144
+        width: 659
+        height: 491
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,6 +220,28 @@ TextureImporter:
       bones: []
       spriteID: 16c5ff62e8caa70b0800000000000000
       internalID: -5730077849335931807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clava_hand_5
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1
+        width: 289
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b741fbe96c0ad10800000000000000
+      internalID: 2134924608486538009
       vertices: []
       indices: 
       edges: []
@@ -279,6 +265,7 @@ TextureImporter:
       clava_hand_2: -7973261074620124119
       clava_hand_3: -933673576510847206
       clava_hand_4: -5730077849335931807
+      clava_hand_5: 2134924608486538009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
