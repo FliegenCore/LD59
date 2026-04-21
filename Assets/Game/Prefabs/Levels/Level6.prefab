@@ -499,7 +499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3649989193373395879, guid: 7d66fa5e023778c46a9a435a8a15dceb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.83
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 5037258187532528769, guid: 7d66fa5e023778c46a9a435a8a15dceb, type: 3}
       propertyPath: skeletonDataAsset
